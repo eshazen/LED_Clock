@@ -26592,7 +26592,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-28"
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_LongPads"
 			(at 185.42 166.37 0)
 			(effects
 				(font
@@ -26943,7 +26943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-28"
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_LongPads"
 			(at 351.79 165.1 0)
 			(effects
 				(font
@@ -28105,6 +28105,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "0ae9ce60-ca96-47c9-a86c-b80f97fbef00")
 		(property "Reference" "U7"
 			(at 102.4733 175.26 0)
@@ -28124,7 +28125,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_LongPads"
 			(at 100.33 193.04 0)
 			(effects
 				(font
@@ -28149,14 +28150,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "DigiKey" "MM74HC138M-ND"
-			(at 114.808 204.724 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "10"
@@ -29078,7 +29071,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 214.3252 250.19 0)
 			(effects
 				(font
@@ -30314,7 +30307,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
 			(at 151.13 245.11 0)
 			(effects
 				(font
@@ -30339,14 +30332,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "DigiKey" "MC74HC125ADR2GOSCT-ND"
-			(at 165.608 254.762 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "3"
@@ -31950,7 +31935,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
 			(at 60.96 208.28 0)
 			(effects
 				(font
@@ -31977,15 +31962,6 @@
 				(hide yes)
 			)
 		)
-		(property "DigiKey" "MC74HC125ADR2GOSCT-ND"
-			(at 60.96 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "378373c7-e644-4231-a245-0f59b8e1abe8")
 		)
@@ -31996,37 +31972,37 @@
 			(uuid "621cc7bf-ecc1-4977-851e-9817705b69f7")
 		)
 		(pin "12"
-			(uuid "3b160997-24cc-44d0-ba28-a618afa7d17e")
+			(uuid "3b160997-24cc-44d0-ba28-a618afa7d17d")
 		)
 		(pin "11"
-			(uuid "bd5d2120-b529-490b-b89d-af0ec9b6a94e")
+			(uuid "bd5d2120-b529-490b-b89d-af0ec9b6a94d")
 		)
 		(pin "7"
-			(uuid "c717f4e5-7c24-4389-9066-64e0c9b496e9")
+			(uuid "c717f4e5-7c24-4389-9066-64e0c9b496e8")
 		)
 		(pin "14"
-			(uuid "160b1fc4-b750-47e6-b223-c3931baa6dd2")
+			(uuid "160b1fc4-b750-47e6-b223-c3931baa6dd1")
 		)
 		(pin "9"
-			(uuid "f1637da2-39d1-4ef5-b561-b1d63ad911cf")
+			(uuid "f1637da2-39d1-4ef5-b561-b1d63ad911ce")
 		)
 		(pin "4"
-			(uuid "858358c3-ea20-4f96-8482-e4a287e70a36")
+			(uuid "858358c3-ea20-4f96-8482-e4a287e70a35")
 		)
 		(pin "5"
-			(uuid "1ffc5558-0d6f-45db-a3ec-f67bd398b4be")
+			(uuid "1ffc5558-0d6f-45db-a3ec-f67bd398b4bd")
 		)
 		(pin "10"
-			(uuid "c40cbe69-53f2-4432-9617-b82423c5bdc4")
+			(uuid "c40cbe69-53f2-4432-9617-b82423c5bdc3")
 		)
 		(pin "13"
-			(uuid "df632632-81d0-4c6e-95b2-39d869709728")
+			(uuid "df632632-81d0-4c6e-95b2-39d869709727")
 		)
 		(pin "6"
-			(uuid "1d346fbe-7197-492a-8842-6fe00f3f934e")
+			(uuid "1d346fbe-7197-492a-8842-6fe00f3f934d")
 		)
 		(pin "8"
-			(uuid "f55cbfdb-e6ed-4efb-84e4-cc64d9f54d40")
+			(uuid "f55cbfdb-e6ed-4efb-84e4-cc64d9f54d3f")
 		)
 		(instances
 			(project ""
@@ -33133,6 +33109,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "3865fdce-7c44-4ed8-bb82-9c34646f07fc")
 		(property "Reference" "U8"
 			(at 102.4733 215.9 0)
@@ -33152,7 +33129,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-20_5.3x12.6mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_LongPads"
 			(at 100.33 236.22 0)
 			(effects
 				(font
@@ -33177,14 +33154,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "DigiKey" "296-8274-1-ND"
-			(at 111.506 253.746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "10"
@@ -34116,7 +34085,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 227.0252 250.19 0)
 			(effects
 				(font
@@ -37444,7 +37413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-28"
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_LongPads"
 			(at 308.61 166.37 0)
 			(effects
 				(font
@@ -37875,7 +37844,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 201.6252 250.19 0)
 			(effects
 				(font
@@ -38634,7 +38603,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 188.9252 250.19 0)
 			(effects
 				(font
@@ -39042,7 +39011,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-28"
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_LongPads"
 			(at 398.78 165.1 0)
 			(effects
 				(font
@@ -39872,7 +39841,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-28"
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_LongPads"
 			(at 226.06 165.1 0)
 			(effects
 				(font
@@ -41599,7 +41568,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-28"
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_LongPads"
 			(at 266.7 166.37 0)
 			(effects
 				(font
@@ -44012,7 +43981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 207.9752 250.19 0)
 			(effects
 				(font
@@ -44081,7 +44050,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 220.6752 250.19 0)
 			(effects
 				(font
@@ -44978,7 +44947,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 233.3752 250.19 0)
 			(effects
 				(font
@@ -48496,7 +48465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 195.2752 250.19 0)
 			(effects
 				(font
@@ -51952,7 +51921,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 239.7252 250.19 0)
 			(effects
 				(font

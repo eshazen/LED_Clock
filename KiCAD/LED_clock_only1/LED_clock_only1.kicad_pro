@@ -451,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LED_clock.kicad_pro",
+    "filename": "LED_clock_only1.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -578,12 +578,6 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "DigiKey",
-          "name": "DigiKey",
-          "show": true
         }
       ],
       "filter_string": "",
