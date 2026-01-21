@@ -5,8 +5,630 @@
 	(uuid "854da954-ecec-4a18-8053-33c879b37ebb")
 	(paper "A4")
 	(lib_symbols)
+	(text "Sectors 1-6 organized clockwise, with sector 1 handling 12:00-1:59"
+		(exclude_from_sim no)
+		(at 49.276 19.558 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+			(justify left)
+		)
+		(uuid "708b3f21-dd94-4685-a892-e2a1da3bf9ef")
+	)
+	(text "UPCO LED Clock"
+		(exclude_from_sim no)
+		(at 181.864 171.45 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "7a2aeb5b-7965-4c1d-b9ef-b68e87bea15e")
+	)
+	(label "D4"
+		(at 119.38 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "05ba0778-0162-4332-a374-597597e301bb")
+	)
+	(label "D6"
+		(at 142.24 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "10f69391-4360-44f3-8f95-cb4f351d5527")
+	)
+	(label "D7"
+		(at 96.52 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "19cc8f41-fe2a-402f-ac56-9cc967f615da")
+	)
+	(label "D3"
+		(at 142.24 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1b629a7e-1027-4dad-83b6-20be28956bcd")
+	)
+	(label "D2"
+		(at 119.38 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "21be7100-2a50-478c-bb7d-6b863c677e30")
+	)
+	(label "~{WR1}"
+		(at 73.66 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3631d333-55b6-499d-a227-d4b417e914a1")
+	)
+	(label "D4"
+		(at 96.52 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3790867f-4a49-434d-b062-c490939a23f7")
+	)
+	(label "D1"
+		(at 96.52 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3bccd53e-57bf-40ae-b6e2-0fb5cad1b6a9")
+	)
+	(label "D5"
+		(at 119.38 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c664152-1345-4d9a-a744-6e4850325d3d")
+	)
+	(label "D5"
+		(at 142.24 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3e4a4f38-db9f-45a9-a562-a5e4da08fa2e")
+	)
+	(label "D3"
+		(at 73.66 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "457dc688-fb79-4ade-b9d5-02cbb861b263")
+	)
+	(label "D6"
+		(at 73.66 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "47404720-b757-4ba2-b64c-0bf22a976eb2")
+	)
+	(label "D0"
+		(at 49.53 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "474d57d8-a8c8-40fe-b621-6b86f2ef6d36")
+	)
+	(label "D5"
+		(at 49.53 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4abd6fdb-5618-4427-89b8-08f13b606e7d")
+	)
+	(label "MODE"
+		(at 165.1 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4d20a65c-2d00-46c6-8526-858cdf409fb6")
+	)
+	(label "D4"
+		(at 73.66 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4d8be010-8f4b-435c-8b4d-64b88b7aa502")
+	)
+	(label "D1"
+		(at 119.38 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4e8699cb-92ab-49aa-9649-d022b8cfe201")
+	)
+	(label "~{WR3}"
+		(at 119.38 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5862f46b-6ad3-4433-8b81-93ace6e9e112")
+	)
+	(label "D7"
+		(at 142.24 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5b8a0c85-c51f-41e8-a648-ac40f4450ec6")
+	)
+	(label "D3"
+		(at 119.38 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5beb9b86-4fe4-4396-bfe8-681c2c7914a5")
+	)
+	(label "D2"
+		(at 49.53 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5cf898e9-aaac-4bc4-be52-caa70398f70e")
+	)
+	(label "D1"
+		(at 142.24 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "601d1948-90e8-417e-a17b-f9c886c034ad")
+	)
+	(label "~{WR0}"
+		(at 49.53 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64ef3688-83bd-4e65-a77b-869f32c98d92")
+	)
+	(label "D6"
+		(at 96.52 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6879bd56-d0a4-40eb-a90c-9cbbfbcd157c")
+	)
+	(label "~{WR5}"
+		(at 165.1 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ab2fb9b-7f74-4ed0-a071-80bfca554023")
+	)
+	(label "D2"
+		(at 73.66 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "73798198-b081-45a9-9fda-c8c221b56454")
+	)
+	(label "D7"
+		(at 49.53 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "75d8a535-103a-4245-a5ea-a8a652735854")
+	)
+	(label "D4"
+		(at 165.1 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7d142a12-d061-453d-a765-d8aa6229074d")
+	)
+	(label "D4"
+		(at 142.24 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7fea221c-179b-459b-9101-f5115f733504")
+	)
+	(label "D7"
+		(at 73.66 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81a3d149-64fc-4b8a-abf0-209badbbf326")
+	)
+	(label "D0"
+		(at 96.52 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "837eff37-80c2-4ae2-973c-9884ad5b3cc9")
+	)
+	(label "MODE"
+		(at 119.38 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "857f6ca5-7ea6-43f9-bc11-0dffe83ba394")
+	)
+	(label "D0"
+		(at 165.1 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "89db7fcb-e2c8-47fb-a042-786271e9a82b")
+	)
+	(label "D2"
+		(at 142.24 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8a180f5c-f0ba-4a13-8918-299a78266a64")
+	)
+	(label "D6"
+		(at 49.53 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8eed9654-c7bc-4e88-be04-dfe714941430")
+	)
+	(label "D4"
+		(at 49.53 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9755785d-d61e-469f-b035-b33b7e303062")
+	)
+	(label "D3"
+		(at 49.53 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9b9b6bfd-aa5e-49f2-a09f-75c504784a7e")
+	)
+	(label "D7"
+		(at 119.38 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a3e40715-1127-44b7-ac5b-28623cb38e7d")
+	)
+	(label "D2"
+		(at 96.52 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "accbd273-ecfb-4c73-bb24-52e45150adc9")
+	)
+	(label "MODE"
+		(at 96.52 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b10d4e53-80be-49d3-a857-09b9c2ac2ba5")
+	)
+	(label "D6"
+		(at 165.1 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b15ed1c0-fcb1-4382-a83d-d002464258db")
+	)
+	(label "D3"
+		(at 96.52 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b23a67ca-bc61-47fe-bc73-8939cf03b196")
+	)
+	(label "D1"
+		(at 165.1 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b2784822-3d50-44ee-9e3f-808bd9960b8b")
+	)
+	(label "D0"
+		(at 142.24 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b6b679f1-4310-47a6-b738-02ec506172bc")
+	)
+	(label "D5"
+		(at 73.66 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bbaab1e4-46f8-4c0d-bf78-2d56e441928e")
+	)
+	(label "D0"
+		(at 119.38 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c13f4080-a96b-4f18-946e-74a855585aac")
+	)
+	(label "D1"
+		(at 73.66 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c443a08d-ce36-440c-866e-81a6bbb5e8e6")
+	)
+	(label "D2"
+		(at 165.1 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c92d3e8f-3a9c-4fea-9df0-af56be9e3703")
+	)
+	(label "MODE"
+		(at 142.24 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cacc817f-133c-4085-90cc-f67646064fa0")
+	)
+	(label "D5"
+		(at 96.52 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d091e283-e143-42df-bcad-d2a90125ce64")
+	)
+	(label "D1"
+		(at 49.53 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d1ba521c-0626-4983-9f9c-22929ed49e26")
+	)
+	(label "D3"
+		(at 165.1 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d279e48a-06c5-4dbe-b903-d2ed9608f111")
+	)
+	(label "~{WR4}"
+		(at 142.24 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d8596781-b938-4b5a-9c75-18a20c158d20")
+	)
+	(label "D5"
+		(at 165.1 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e23aa3ec-9289-4fe8-a3b8-717b4c4d3b9a")
+	)
+	(label "D6"
+		(at 119.38 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e2bfa29d-c886-4157-8f01-41e881d89e9f")
+	)
+	(label "MODE"
+		(at 73.66 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e33142ca-97d3-42ed-8d6d-02dbb4c3e3d2")
+	)
+	(label "D7"
+		(at 165.1 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e7285919-df12-43e2-8471-adb826a92f60")
+	)
+	(label "MODE"
+		(at 49.53 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e9a489d6-5607-405c-8885-d995779963ea")
+	)
+	(label "D0"
+		(at 73.66 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ec093f5c-fcfb-437a-90af-d7b0b5eda1f5")
+	)
+	(label "~{WR2}"
+		(at 96.52 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f5ab5fc4-b26b-4993-afde-e17252fddb65")
+	)
 	(sheet
-		(at 111.76 49.53)
+		(at 119.38 27.94)
 		(size 12.7 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +644,7 @@
 		)
 		(uuid "04b05e74-e8a7-427c-8af0-1f08c509c03f")
 		(property "Sheetname" "Sector4"
-			(at 111.76 48.8184 0)
+			(at 119.38 27.2284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,7 +653,7 @@
 			)
 		)
 		(property "Sheetfile" "sector.kicad_sch"
-			(at 111.76 81.8646 0)
+			(at 119.38 60.2746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40,7 +662,7 @@
 			)
 		)
 		(pin "D0" input
-			(at 111.76 53.34 180)
+			(at 119.38 31.75 180)
 			(uuid "b8a8cc7b-478f-48bc-84ef-11d2fb81829e")
 			(effects
 				(font
@@ -50,7 +672,7 @@
 			)
 		)
 		(pin "D1" input
-			(at 111.76 55.88 180)
+			(at 119.38 34.29 180)
 			(uuid "fed2ff82-5fa7-435b-a5ee-14726c1f7eae")
 			(effects
 				(font
@@ -60,7 +682,7 @@
 			)
 		)
 		(pin "D2" input
-			(at 111.76 58.42 180)
+			(at 119.38 36.83 180)
 			(uuid "7ffbd905-19ee-4bfa-b541-350580d64a46")
 			(effects
 				(font
@@ -70,7 +692,7 @@
 			)
 		)
 		(pin "D3" input
-			(at 111.76 60.96 180)
+			(at 119.38 39.37 180)
 			(uuid "18c62e29-9f21-4d89-8814-4611e4a8a2f3")
 			(effects
 				(font
@@ -80,7 +702,7 @@
 			)
 		)
 		(pin "D4" input
-			(at 111.76 63.5 180)
+			(at 119.38 41.91 180)
 			(uuid "8a419e1a-824a-423e-8b4f-0dc9f30d7beb")
 			(effects
 				(font
@@ -90,7 +712,7 @@
 			)
 		)
 		(pin "D5" input
-			(at 111.76 66.04 180)
+			(at 119.38 44.45 180)
 			(uuid "d4f113f5-84ed-4f0e-8280-6f428e5366f0")
 			(effects
 				(font
@@ -100,7 +722,7 @@
 			)
 		)
 		(pin "D6" input
-			(at 111.76 68.58 180)
+			(at 119.38 46.99 180)
 			(uuid "292c5ebf-16b5-462b-9631-d1be9830087a")
 			(effects
 				(font
@@ -110,7 +732,7 @@
 			)
 		)
 		(pin "D7" input
-			(at 111.76 71.12 180)
+			(at 119.38 49.53 180)
 			(uuid "fb2908d1-4f3b-4b00-81e6-de03879cca0b")
 			(effects
 				(font
@@ -120,7 +742,7 @@
 			)
 		)
 		(pin "MODE" input
-			(at 111.76 76.2 180)
+			(at 119.38 54.61 180)
 			(uuid "128e1113-7c7b-4bdc-a4d4-d907fd68bd1d")
 			(effects
 				(font
@@ -130,7 +752,7 @@
 			)
 		)
 		(pin "~{WR}" input
-			(at 111.76 78.74 180)
+			(at 119.38 57.15 180)
 			(uuid "cbf46a51-0cdf-4062-8d52-1a05450793b3")
 			(effects
 				(font
@@ -148,7 +770,7 @@
 		)
 	)
 	(sheet
-		(at 66.04 49.53)
+		(at 73.66 27.94)
 		(size 12.7 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -164,7 +786,7 @@
 		)
 		(uuid "1f856a04-686b-457e-87a4-7af76d5edd09")
 		(property "Sheetname" "Sector2"
-			(at 66.04 48.8184 0)
+			(at 73.66 27.2284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -173,7 +795,7 @@
 			)
 		)
 		(property "Sheetfile" "sector.kicad_sch"
-			(at 66.04 81.8646 0)
+			(at 73.66 60.2746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -182,7 +804,7 @@
 			)
 		)
 		(pin "D0" input
-			(at 66.04 53.34 180)
+			(at 73.66 31.75 180)
 			(uuid "fee71055-91a6-4423-ab81-9b6da5c09d07")
 			(effects
 				(font
@@ -192,7 +814,7 @@
 			)
 		)
 		(pin "D1" input
-			(at 66.04 55.88 180)
+			(at 73.66 34.29 180)
 			(uuid "a7d730d8-3380-4a67-9a8c-9801819ae451")
 			(effects
 				(font
@@ -202,7 +824,7 @@
 			)
 		)
 		(pin "D2" input
-			(at 66.04 58.42 180)
+			(at 73.66 36.83 180)
 			(uuid "9809ac76-cdfe-472f-80b1-67312dea0ef6")
 			(effects
 				(font
@@ -212,7 +834,7 @@
 			)
 		)
 		(pin "D3" input
-			(at 66.04 60.96 180)
+			(at 73.66 39.37 180)
 			(uuid "22ef934b-a850-43ba-80b1-4c921f4efcd1")
 			(effects
 				(font
@@ -222,7 +844,7 @@
 			)
 		)
 		(pin "D4" input
-			(at 66.04 63.5 180)
+			(at 73.66 41.91 180)
 			(uuid "5f2e336c-7dfe-4d17-9935-6487a2a6b393")
 			(effects
 				(font
@@ -232,7 +854,7 @@
 			)
 		)
 		(pin "D5" input
-			(at 66.04 66.04 180)
+			(at 73.66 44.45 180)
 			(uuid "43bfbde0-a578-4b9a-aaad-55c0237f9bf6")
 			(effects
 				(font
@@ -242,7 +864,7 @@
 			)
 		)
 		(pin "D6" input
-			(at 66.04 68.58 180)
+			(at 73.66 46.99 180)
 			(uuid "6c17b3f5-19fa-4167-9a32-34c3e3cef349")
 			(effects
 				(font
@@ -252,7 +874,7 @@
 			)
 		)
 		(pin "D7" input
-			(at 66.04 71.12 180)
+			(at 73.66 49.53 180)
 			(uuid "0e0a6931-3db4-4576-8459-7006209bb324")
 			(effects
 				(font
@@ -262,7 +884,7 @@
 			)
 		)
 		(pin "MODE" input
-			(at 66.04 76.2 180)
+			(at 73.66 54.61 180)
 			(uuid "dca00ff4-2260-4ab6-ae33-d57768f899f0")
 			(effects
 				(font
@@ -272,7 +894,7 @@
 			)
 		)
 		(pin "~{WR}" input
-			(at 66.04 78.74 180)
+			(at 73.66 57.15 180)
 			(uuid "6b930181-e21c-4f2a-a601-ccd7f29521af")
 			(effects
 				(font
@@ -290,7 +912,7 @@
 		)
 	)
 	(sheet
-		(at 88.9 49.53)
+		(at 96.52 27.94)
 		(size 12.7 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -306,7 +928,7 @@
 		)
 		(uuid "5d46d765-1d6c-4220-8ee8-442dc3b3697f")
 		(property "Sheetname" "Sector3"
-			(at 88.9 48.8184 0)
+			(at 96.52 27.2284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -315,7 +937,7 @@
 			)
 		)
 		(property "Sheetfile" "sector.kicad_sch"
-			(at 88.9 81.8646 0)
+			(at 96.52 60.2746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -324,7 +946,7 @@
 			)
 		)
 		(pin "D0" input
-			(at 88.9 53.34 180)
+			(at 96.52 31.75 180)
 			(uuid "d6dffc6b-9822-4d7d-a5c2-d0820dbdfab5")
 			(effects
 				(font
@@ -334,7 +956,7 @@
 			)
 		)
 		(pin "D1" input
-			(at 88.9 55.88 180)
+			(at 96.52 34.29 180)
 			(uuid "061b253c-7ea0-4b48-9533-261376d15782")
 			(effects
 				(font
@@ -344,7 +966,7 @@
 			)
 		)
 		(pin "D2" input
-			(at 88.9 58.42 180)
+			(at 96.52 36.83 180)
 			(uuid "d73a831b-da96-4804-90b3-c02a7161c9c3")
 			(effects
 				(font
@@ -354,7 +976,7 @@
 			)
 		)
 		(pin "D3" input
-			(at 88.9 60.96 180)
+			(at 96.52 39.37 180)
 			(uuid "688753ae-5f09-4da6-a13f-4ae922505478")
 			(effects
 				(font
@@ -364,7 +986,7 @@
 			)
 		)
 		(pin "D4" input
-			(at 88.9 63.5 180)
+			(at 96.52 41.91 180)
 			(uuid "86c9d49e-1463-4bcf-8dc7-e2fa895e849c")
 			(effects
 				(font
@@ -374,7 +996,7 @@
 			)
 		)
 		(pin "D5" input
-			(at 88.9 66.04 180)
+			(at 96.52 44.45 180)
 			(uuid "7d9098f0-50b0-4493-baba-4481603113b5")
 			(effects
 				(font
@@ -384,7 +1006,7 @@
 			)
 		)
 		(pin "D6" input
-			(at 88.9 68.58 180)
+			(at 96.52 46.99 180)
 			(uuid "56cc20d4-66f1-4346-8625-4a41d010ffa0")
 			(effects
 				(font
@@ -394,7 +1016,7 @@
 			)
 		)
 		(pin "D7" input
-			(at 88.9 71.12 180)
+			(at 96.52 49.53 180)
 			(uuid "6a5af776-16f1-4c35-885c-dceb7a5fd879")
 			(effects
 				(font
@@ -404,7 +1026,7 @@
 			)
 		)
 		(pin "MODE" input
-			(at 88.9 76.2 180)
+			(at 96.52 54.61 180)
 			(uuid "9ca3ffc3-a9a6-47a7-b254-4d402dc555b8")
 			(effects
 				(font
@@ -414,7 +1036,7 @@
 			)
 		)
 		(pin "~{WR}" input
-			(at 88.9 78.74 180)
+			(at 96.52 57.15 180)
 			(uuid "e812bfc6-56fe-4b97-8ba5-cf91543e2391")
 			(effects
 				(font
@@ -432,7 +1054,7 @@
 		)
 	)
 	(sheet
-		(at 41.91 49.53)
+		(at 49.53 27.94)
 		(size 12.7 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -448,7 +1070,7 @@
 		)
 		(uuid "929ff51f-02c5-4c2a-9e52-da6367ed83c7")
 		(property "Sheetname" "Sector1"
-			(at 41.91 48.8184 0)
+			(at 49.53 27.2284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -457,7 +1079,7 @@
 			)
 		)
 		(property "Sheetfile" "sector.kicad_sch"
-			(at 41.91 81.8646 0)
+			(at 49.53 60.2746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -466,7 +1088,7 @@
 			)
 		)
 		(pin "D0" input
-			(at 41.91 53.34 180)
+			(at 49.53 31.75 180)
 			(uuid "b00676d0-b66a-440b-baf2-f0bd3f9d5945")
 			(effects
 				(font
@@ -476,7 +1098,7 @@
 			)
 		)
 		(pin "D1" input
-			(at 41.91 55.88 180)
+			(at 49.53 34.29 180)
 			(uuid "2fc87fa9-4174-4925-96d3-ecfc7785631f")
 			(effects
 				(font
@@ -486,7 +1108,7 @@
 			)
 		)
 		(pin "D2" input
-			(at 41.91 58.42 180)
+			(at 49.53 36.83 180)
 			(uuid "a8549934-44a0-495b-9437-22883e96b387")
 			(effects
 				(font
@@ -496,7 +1118,7 @@
 			)
 		)
 		(pin "D3" input
-			(at 41.91 60.96 180)
+			(at 49.53 39.37 180)
 			(uuid "14504a0e-8cdc-438a-8f2d-0c1f1116ce73")
 			(effects
 				(font
@@ -506,7 +1128,7 @@
 			)
 		)
 		(pin "D4" input
-			(at 41.91 63.5 180)
+			(at 49.53 41.91 180)
 			(uuid "992ca511-189f-4180-9f54-b4be1836e31e")
 			(effects
 				(font
@@ -516,7 +1138,7 @@
 			)
 		)
 		(pin "D5" input
-			(at 41.91 66.04 180)
+			(at 49.53 44.45 180)
 			(uuid "61067a38-f8d1-4e17-9b6d-049f542c9005")
 			(effects
 				(font
@@ -526,7 +1148,7 @@
 			)
 		)
 		(pin "D6" input
-			(at 41.91 68.58 180)
+			(at 49.53 46.99 180)
 			(uuid "f3480b79-303b-46bb-93df-22fe87d1bf38")
 			(effects
 				(font
@@ -536,7 +1158,7 @@
 			)
 		)
 		(pin "D7" input
-			(at 41.91 71.12 180)
+			(at 49.53 49.53 180)
 			(uuid "e377a62a-38c4-4239-820b-420712c4e58b")
 			(effects
 				(font
@@ -546,7 +1168,7 @@
 			)
 		)
 		(pin "MODE" input
-			(at 41.91 76.2 180)
+			(at 49.53 54.61 180)
 			(uuid "22a8e7e3-a4df-4365-8180-362955198796")
 			(effects
 				(font
@@ -556,7 +1178,7 @@
 			)
 		)
 		(pin "~{WR}" input
-			(at 41.91 78.74 180)
+			(at 49.53 57.15 180)
 			(uuid "83acaf7c-2bfb-47ae-93dd-c35d7c3b32c1")
 			(effects
 				(font
@@ -574,7 +1196,7 @@
 		)
 	)
 	(sheet
-		(at 157.48 49.53)
+		(at 165.1 27.94)
 		(size 12.7 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -590,7 +1212,7 @@
 		)
 		(uuid "9a15f943-25f9-4164-acd0-5bc298e32013")
 		(property "Sheetname" "Sector6"
-			(at 157.48 48.8184 0)
+			(at 165.1 27.2284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -599,7 +1221,7 @@
 			)
 		)
 		(property "Sheetfile" "sector.kicad_sch"
-			(at 157.48 81.8646 0)
+			(at 165.1 60.2746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -608,7 +1230,7 @@
 			)
 		)
 		(pin "D0" input
-			(at 157.48 53.34 180)
+			(at 165.1 31.75 180)
 			(uuid "06124cc1-8080-4b5b-81ed-d500d6a82eaf")
 			(effects
 				(font
@@ -618,7 +1240,7 @@
 			)
 		)
 		(pin "D1" input
-			(at 157.48 55.88 180)
+			(at 165.1 34.29 180)
 			(uuid "d41bc449-7b82-4ab1-b4e7-b0311f16486b")
 			(effects
 				(font
@@ -628,7 +1250,7 @@
 			)
 		)
 		(pin "D2" input
-			(at 157.48 58.42 180)
+			(at 165.1 36.83 180)
 			(uuid "129ef20a-2daa-4965-a15d-3f4d92dddd48")
 			(effects
 				(font
@@ -638,7 +1260,7 @@
 			)
 		)
 		(pin "D3" input
-			(at 157.48 60.96 180)
+			(at 165.1 39.37 180)
 			(uuid "b298a6bc-36b1-4cb5-9063-754c3cabc7b8")
 			(effects
 				(font
@@ -648,7 +1270,7 @@
 			)
 		)
 		(pin "D4" input
-			(at 157.48 63.5 180)
+			(at 165.1 41.91 180)
 			(uuid "5f1ed0da-9268-4372-90fa-af75f24d2c1e")
 			(effects
 				(font
@@ -658,7 +1280,7 @@
 			)
 		)
 		(pin "D5" input
-			(at 157.48 66.04 180)
+			(at 165.1 44.45 180)
 			(uuid "6ef8ffc3-dc6a-47d6-af7b-cfa721ac6eb4")
 			(effects
 				(font
@@ -668,7 +1290,7 @@
 			)
 		)
 		(pin "D6" input
-			(at 157.48 68.58 180)
+			(at 165.1 46.99 180)
 			(uuid "a8809e37-2ff5-4136-ad38-2392ba156d69")
 			(effects
 				(font
@@ -678,7 +1300,7 @@
 			)
 		)
 		(pin "D7" input
-			(at 157.48 71.12 180)
+			(at 165.1 49.53 180)
 			(uuid "df6d4bce-32a0-45e7-ab66-e3af5dc221c3")
 			(effects
 				(font
@@ -688,7 +1310,7 @@
 			)
 		)
 		(pin "MODE" input
-			(at 157.48 76.2 180)
+			(at 165.1 54.61 180)
 			(uuid "222f1c49-d21e-47e8-bf42-4ce9f267faee")
 			(effects
 				(font
@@ -698,7 +1320,7 @@
 			)
 		)
 		(pin "~{WR}" input
-			(at 157.48 78.74 180)
+			(at 165.1 57.15 180)
 			(uuid "b07ff192-a797-4fab-9754-ecfe3be45550")
 			(effects
 				(font
@@ -716,7 +1338,7 @@
 		)
 	)
 	(sheet
-		(at 134.62 49.53)
+		(at 142.24 27.94)
 		(size 12.7 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -732,7 +1354,7 @@
 		)
 		(uuid "ab90faec-1c29-4b43-b677-784af5a0f47e")
 		(property "Sheetname" "Sector5"
-			(at 134.62 48.8184 0)
+			(at 142.24 27.2284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -741,7 +1363,7 @@
 			)
 		)
 		(property "Sheetfile" "sector.kicad_sch"
-			(at 134.62 81.8646 0)
+			(at 142.24 60.2746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,7 +1372,7 @@
 			)
 		)
 		(pin "D0" input
-			(at 134.62 53.34 180)
+			(at 142.24 31.75 180)
 			(uuid "b5dfa3c7-7cc8-469a-aa92-f58f2245aeb2")
 			(effects
 				(font
@@ -760,7 +1382,7 @@
 			)
 		)
 		(pin "D1" input
-			(at 134.62 55.88 180)
+			(at 142.24 34.29 180)
 			(uuid "ee9925d7-e5d1-4817-9c1e-9a7a2742a07f")
 			(effects
 				(font
@@ -770,7 +1392,7 @@
 			)
 		)
 		(pin "D2" input
-			(at 134.62 58.42 180)
+			(at 142.24 36.83 180)
 			(uuid "d2262b8e-fc88-47e8-82a6-8b8222c7ec46")
 			(effects
 				(font
@@ -780,7 +1402,7 @@
 			)
 		)
 		(pin "D3" input
-			(at 134.62 60.96 180)
+			(at 142.24 39.37 180)
 			(uuid "6a6da2d1-9376-4de8-93f8-59352552c516")
 			(effects
 				(font
@@ -790,7 +1412,7 @@
 			)
 		)
 		(pin "D4" input
-			(at 134.62 63.5 180)
+			(at 142.24 41.91 180)
 			(uuid "5b1d0a07-e742-420b-855a-3a54c63d82f5")
 			(effects
 				(font
@@ -800,7 +1422,7 @@
 			)
 		)
 		(pin "D5" input
-			(at 134.62 66.04 180)
+			(at 142.24 44.45 180)
 			(uuid "49048470-99e9-42f2-b8d9-48c323423b18")
 			(effects
 				(font
@@ -810,7 +1432,7 @@
 			)
 		)
 		(pin "D6" input
-			(at 134.62 68.58 180)
+			(at 142.24 46.99 180)
 			(uuid "12ac5174-e468-4e10-8c21-9b7899d96946")
 			(effects
 				(font
@@ -820,7 +1442,7 @@
 			)
 		)
 		(pin "D7" input
-			(at 134.62 71.12 180)
+			(at 142.24 49.53 180)
 			(uuid "d58eb7e2-e906-4be9-972a-84857c4f0372")
 			(effects
 				(font
@@ -830,7 +1452,7 @@
 			)
 		)
 		(pin "MODE" input
-			(at 134.62 76.2 180)
+			(at 142.24 54.61 180)
 			(uuid "5421aa2a-a133-4571-9e59-5254e4ac359f")
 			(effects
 				(font
@@ -840,7 +1462,7 @@
 			)
 		)
 		(pin "~{WR}" input
-			(at 134.62 78.74 180)
+			(at 142.24 57.15 180)
 			(uuid "f6a88089-05bc-4d5c-845a-b6acd2db0fd0")
 			(effects
 				(font

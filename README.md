@@ -4,9 +4,10 @@ Yet another LED pseudo-analog clock
 
 ## 2026-01-21
 
-`LED_Clock` is the working version
+`LED_Clock_sector` is the current design
 
-Thoughts:  Rearrange the connectivity so that the entire set of 372
-LEDs is mapped to drivers in radial sectors of 62 LEDs each.  This should
-in priciple allow the routing to be duplicated with a 60 degree rotation.
+LEDs are arranged in 6 sectors of 62 total LEDs, each driven by an
+ICM7218A driver.  All placement/routing is duplicated radially.
+
+
 
