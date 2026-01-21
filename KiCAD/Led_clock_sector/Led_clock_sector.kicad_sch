@@ -1,0 +1,866 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "854da954-ecec-4a18-8053-33c879b37ebb")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 111.76 49.53)
+		(size 12.7 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "04b05e74-e8a7-427c-8af0-1f08c509c03f")
+		(property "Sheetname" "Sector4"
+			(at 111.76 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sector.kicad_sch"
+			(at 111.76 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "D0" input
+			(at 111.76 53.34 180)
+			(uuid "b8a8cc7b-478f-48bc-84ef-11d2fb81829e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D1" input
+			(at 111.76 55.88 180)
+			(uuid "fed2ff82-5fa7-435b-a5ee-14726c1f7eae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D2" input
+			(at 111.76 58.42 180)
+			(uuid "7ffbd905-19ee-4bfa-b541-350580d64a46")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D3" input
+			(at 111.76 60.96 180)
+			(uuid "18c62e29-9f21-4d89-8814-4611e4a8a2f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D4" input
+			(at 111.76 63.5 180)
+			(uuid "8a419e1a-824a-423e-8b4f-0dc9f30d7beb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D5" input
+			(at 111.76 66.04 180)
+			(uuid "d4f113f5-84ed-4f0e-8280-6f428e5366f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D6" input
+			(at 111.76 68.58 180)
+			(uuid "292c5ebf-16b5-462b-9631-d1be9830087a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D7" input
+			(at 111.76 71.12 180)
+			(uuid "fb2908d1-4f3b-4b00-81e6-de03879cca0b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MODE" input
+			(at 111.76 76.2 180)
+			(uuid "128e1113-7c7b-4bdc-a4d4-d907fd68bd1d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{WR}" input
+			(at 111.76 78.74 180)
+			(uuid "cbf46a51-0cdf-4062-8d52-1a05450793b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Led_clock_sector"
+				(path "/854da954-ecec-4a18-8053-33c879b37ebb"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 66.04 49.53)
+		(size 12.7 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1f856a04-686b-457e-87a4-7af76d5edd09")
+		(property "Sheetname" "Sector2"
+			(at 66.04 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sector.kicad_sch"
+			(at 66.04 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "D0" input
+			(at 66.04 53.34 180)
+			(uuid "fee71055-91a6-4423-ab81-9b6da5c09d07")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D1" input
+			(at 66.04 55.88 180)
+			(uuid "a7d730d8-3380-4a67-9a8c-9801819ae451")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D2" input
+			(at 66.04 58.42 180)
+			(uuid "9809ac76-cdfe-472f-80b1-67312dea0ef6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D3" input
+			(at 66.04 60.96 180)
+			(uuid "22ef934b-a850-43ba-80b1-4c921f4efcd1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D4" input
+			(at 66.04 63.5 180)
+			(uuid "5f2e336c-7dfe-4d17-9935-6487a2a6b393")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D5" input
+			(at 66.04 66.04 180)
+			(uuid "43bfbde0-a578-4b9a-aaad-55c0237f9bf6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D6" input
+			(at 66.04 68.58 180)
+			(uuid "6c17b3f5-19fa-4167-9a32-34c3e3cef349")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D7" input
+			(at 66.04 71.12 180)
+			(uuid "0e0a6931-3db4-4576-8459-7006209bb324")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MODE" input
+			(at 66.04 76.2 180)
+			(uuid "dca00ff4-2260-4ab6-ae33-d57768f899f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{WR}" input
+			(at 66.04 78.74 180)
+			(uuid "6b930181-e21c-4f2a-a601-ccd7f29521af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Led_clock_sector"
+				(path "/854da954-ecec-4a18-8053-33c879b37ebb"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 49.53)
+		(size 12.7 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5d46d765-1d6c-4220-8ee8-442dc3b3697f")
+		(property "Sheetname" "Sector3"
+			(at 88.9 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sector.kicad_sch"
+			(at 88.9 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "D0" input
+			(at 88.9 53.34 180)
+			(uuid "d6dffc6b-9822-4d7d-a5c2-d0820dbdfab5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D1" input
+			(at 88.9 55.88 180)
+			(uuid "061b253c-7ea0-4b48-9533-261376d15782")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D2" input
+			(at 88.9 58.42 180)
+			(uuid "d73a831b-da96-4804-90b3-c02a7161c9c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D3" input
+			(at 88.9 60.96 180)
+			(uuid "688753ae-5f09-4da6-a13f-4ae922505478")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D4" input
+			(at 88.9 63.5 180)
+			(uuid "86c9d49e-1463-4bcf-8dc7-e2fa895e849c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D5" input
+			(at 88.9 66.04 180)
+			(uuid "7d9098f0-50b0-4493-baba-4481603113b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D6" input
+			(at 88.9 68.58 180)
+			(uuid "56cc20d4-66f1-4346-8625-4a41d010ffa0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D7" input
+			(at 88.9 71.12 180)
+			(uuid "6a5af776-16f1-4c35-885c-dceb7a5fd879")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MODE" input
+			(at 88.9 76.2 180)
+			(uuid "9ca3ffc3-a9a6-47a7-b254-4d402dc555b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{WR}" input
+			(at 88.9 78.74 180)
+			(uuid "e812bfc6-56fe-4b97-8ba5-cf91543e2391")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Led_clock_sector"
+				(path "/854da954-ecec-4a18-8053-33c879b37ebb"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 41.91 49.53)
+		(size 12.7 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "929ff51f-02c5-4c2a-9e52-da6367ed83c7")
+		(property "Sheetname" "Sector1"
+			(at 41.91 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sector.kicad_sch"
+			(at 41.91 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "D0" input
+			(at 41.91 53.34 180)
+			(uuid "b00676d0-b66a-440b-baf2-f0bd3f9d5945")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D1" input
+			(at 41.91 55.88 180)
+			(uuid "2fc87fa9-4174-4925-96d3-ecfc7785631f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D2" input
+			(at 41.91 58.42 180)
+			(uuid "a8549934-44a0-495b-9437-22883e96b387")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D3" input
+			(at 41.91 60.96 180)
+			(uuid "14504a0e-8cdc-438a-8f2d-0c1f1116ce73")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D4" input
+			(at 41.91 63.5 180)
+			(uuid "992ca511-189f-4180-9f54-b4be1836e31e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D5" input
+			(at 41.91 66.04 180)
+			(uuid "61067a38-f8d1-4e17-9b6d-049f542c9005")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D6" input
+			(at 41.91 68.58 180)
+			(uuid "f3480b79-303b-46bb-93df-22fe87d1bf38")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D7" input
+			(at 41.91 71.12 180)
+			(uuid "e377a62a-38c4-4239-820b-420712c4e58b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MODE" input
+			(at 41.91 76.2 180)
+			(uuid "22a8e7e3-a4df-4365-8180-362955198796")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{WR}" input
+			(at 41.91 78.74 180)
+			(uuid "83acaf7c-2bfb-47ae-93dd-c35d7c3b32c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Led_clock_sector"
+				(path "/854da954-ecec-4a18-8053-33c879b37ebb"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 157.48 49.53)
+		(size 12.7 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9a15f943-25f9-4164-acd0-5bc298e32013")
+		(property "Sheetname" "Sector6"
+			(at 157.48 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sector.kicad_sch"
+			(at 157.48 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "D0" input
+			(at 157.48 53.34 180)
+			(uuid "06124cc1-8080-4b5b-81ed-d500d6a82eaf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D1" input
+			(at 157.48 55.88 180)
+			(uuid "d41bc449-7b82-4ab1-b4e7-b0311f16486b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D2" input
+			(at 157.48 58.42 180)
+			(uuid "129ef20a-2daa-4965-a15d-3f4d92dddd48")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D3" input
+			(at 157.48 60.96 180)
+			(uuid "b298a6bc-36b1-4cb5-9063-754c3cabc7b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D4" input
+			(at 157.48 63.5 180)
+			(uuid "5f1ed0da-9268-4372-90fa-af75f24d2c1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D5" input
+			(at 157.48 66.04 180)
+			(uuid "6ef8ffc3-dc6a-47d6-af7b-cfa721ac6eb4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D6" input
+			(at 157.48 68.58 180)
+			(uuid "a8809e37-2ff5-4136-ad38-2392ba156d69")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D7" input
+			(at 157.48 71.12 180)
+			(uuid "df6d4bce-32a0-45e7-ab66-e3af5dc221c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MODE" input
+			(at 157.48 76.2 180)
+			(uuid "222f1c49-d21e-47e8-bf42-4ce9f267faee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{WR}" input
+			(at 157.48 78.74 180)
+			(uuid "b07ff192-a797-4fab-9754-ecfe3be45550")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Led_clock_sector"
+				(path "/854da954-ecec-4a18-8053-33c879b37ebb"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 49.53)
+		(size 12.7 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ab90faec-1c29-4b43-b677-784af5a0f47e")
+		(property "Sheetname" "Sector5"
+			(at 134.62 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sector.kicad_sch"
+			(at 134.62 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "D0" input
+			(at 134.62 53.34 180)
+			(uuid "b5dfa3c7-7cc8-469a-aa92-f58f2245aeb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D1" input
+			(at 134.62 55.88 180)
+			(uuid "ee9925d7-e5d1-4817-9c1e-9a7a2742a07f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D2" input
+			(at 134.62 58.42 180)
+			(uuid "d2262b8e-fc88-47e8-82a6-8b8222c7ec46")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D3" input
+			(at 134.62 60.96 180)
+			(uuid "6a6da2d1-9376-4de8-93f8-59352552c516")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D4" input
+			(at 134.62 63.5 180)
+			(uuid "5b1d0a07-e742-420b-855a-3a54c63d82f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D5" input
+			(at 134.62 66.04 180)
+			(uuid "49048470-99e9-42f2-b8d9-48c323423b18")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D6" input
+			(at 134.62 68.58 180)
+			(uuid "12ac5174-e468-4e10-8c21-9b7899d96946")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D7" input
+			(at 134.62 71.12 180)
+			(uuid "d58eb7e2-e906-4be9-972a-84857c4f0372")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MODE" input
+			(at 134.62 76.2 180)
+			(uuid "5421aa2a-a133-4571-9e59-5254e4ac359f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{WR}" input
+			(at 134.62 78.74 180)
+			(uuid "f6a88089-05bc-4d5c-845a-b6acd2db0fd0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Led_clock_sector"
+				(path "/854da954-ecec-4a18-8053-33c879b37ebb"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
