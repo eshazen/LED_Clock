@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "my_TI_24N")(type "KiCad")(uri "${KIPRJMOD}/my_TI_24N")(options "")(descr ""))
+  (lib (name "my_BJack")(type "KiCad")(uri "${KIPRJMOD}/my_BJack")(options "")(descr ""))
+)

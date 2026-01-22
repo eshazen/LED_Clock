@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SN74LVC4245ADWR")(type "KiCad")(uri "${KIPRJMOD}/SN74LVC4245ADWR.kicad_sym")(options "")(descr ""))
+  (lib (name "PJ-082BH")(type "KiCad")(uri "${KIPRJMOD}/PJ-082BH.kicad_sym")(options "")(descr ""))
+)
