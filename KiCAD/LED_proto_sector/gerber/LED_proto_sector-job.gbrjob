@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "9.0.7-9.0.7~ubuntu24.04.1"
     },
-    "CreationDate": "2026-01-21T14:41:36-05:00"
+    "CreationDate": "2026-01-22T09:15:27-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "Led_clock_sector",
-      "GUID": "4c65645f-636c-46f6-936b-5f736563746f",
+      "Name": "LED_proto_sector",
+      "GUID": "4c45445f-7072-46f7-946f-5f736563746f",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 228.65,
-      "Y": 228.65
+      "X": 96.57,
+      "Y": 108.0
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -34,37 +34,37 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "Led_clock_sector-F_Cu.gbr",
+      "Path": "LED_proto_sector-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Led_clock_sector-B_Cu.gbr",
+      "Path": "LED_proto_sector-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Led_clock_sector-F_Silkscreen.gbr",
+      "Path": "LED_proto_sector-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Led_clock_sector-B_Silkscreen.gbr",
+      "Path": "LED_proto_sector-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Led_clock_sector-F_Mask.gbr",
+      "Path": "LED_proto_sector-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "Led_clock_sector-B_Mask.gbr",
+      "Path": "LED_proto_sector-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "Led_clock_sector-Edge_Cuts.gbr",
+      "Path": "LED_proto_sector-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
