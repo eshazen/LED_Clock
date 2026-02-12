@@ -1191,6 +1191,18 @@
 		)
 		(uuid "e03712c2-fb9e-4519-9e15-801688e6b1e8")
 	)
+	(text "CONTROL BITS\nID4 - ~{SHUTDOWN}\nID5 - ~{DECODE}\nID6 - HEX/~{CODEB}\nID7 - DATA COMING\n"
+		(exclude_from_sim no)
+		(at 25.4 111.252 0)
+		(effects
+			(font
+				(face "Courier")
+				(size 1.905 1.905)
+			)
+			(justify left)
+		)
+		(uuid "e9d0d602-ad43-4528-b081-bd4eef52f57c")
+	)
 	(text "Ring 1 - 3mm"
 		(exclude_from_sim no)
 		(at 176.784 53.34 0)
@@ -8712,6 +8724,15 @@
 				)
 			)
 		)
+		(property "CatNo" "ICM7218AIQI+-ND"
+			(at 45.72 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "22"
 			(uuid "f07c8f81-e80c-48c8-8978-a685819d2c46")
 		)
@@ -8888,6 +8909,14 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
+			(at 74.422 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e7b0f784-1945-4171-819e-c188214e8824")
 		)
@@ -8978,6 +9007,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
 			(at 85.09 53.34 0)
 			(effects
 				(font
@@ -9084,6 +9122,14 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 69.342 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "28fa343b-7342-4e98-b77d-4aed827230aa")
 		)
@@ -9174,6 +9220,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 78.74 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
 			(at 78.74 96.52 0)
 			(effects
 				(font
@@ -9280,6 +9335,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 135.89 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "38d3232c-edd1-4a70-af8d-1db5050d8ed8")
 		)
@@ -9370,6 +9434,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 85.09 124.46 0)
 			(effects
 				(font
@@ -9476,6 +9549,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 91.44 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d784f144-5212-4d13-8411-2b5de4b0349f")
 		)
@@ -9566,6 +9648,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 104.14 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
 			(at 104.14 53.34 0)
 			(effects
 				(font
@@ -9672,6 +9763,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 110.49 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "eb48b5b5-51b1-4cd9-9000-fa288b858f64")
 		)
@@ -9762,6 +9862,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 91.44 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 91.44 110.49 0)
 			(effects
 				(font
@@ -9868,6 +9977,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 129.54 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7904fdd2-fb64-4aef-bd68-caeac93d7c3e")
 		)
@@ -9958,6 +10076,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 110.49 110.49 0)
 			(effects
 				(font
@@ -10064,6 +10191,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 116.84 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "09739155-da10-4e55-a4db-0e44087e2197")
 		)
@@ -10154,6 +10290,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 129.54 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 129.54 139.7 0)
 			(effects
 				(font
@@ -10260,6 +10405,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 97.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ca248e2e-411e-4087-b773-9d8be817d092")
 		)
@@ -10350,6 +10504,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 104.14 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 104.14 124.46 0)
 			(effects
 				(font
@@ -10456,6 +10619,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8748de55-79f0-4fb9-832c-85f0964f7fe1")
 		)
@@ -10554,6 +10726,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 104.14 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a4a2d9a0-c9ca-4bc0-a60b-f20a9e635ee6")
 		)
@@ -10644,6 +10825,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
 			(at 123.19 82.55 0)
 			(effects
 				(font
@@ -10836,6 +11026,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 129.54 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1c3dfb60-8ff1-4b42-a442-9b677ddefc99")
 		)
@@ -10926,6 +11125,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 135.89 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
 			(at 135.89 53.34 0)
 			(effects
 				(font
@@ -11032,6 +11240,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 104.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "80ad7775-f99c-4e00-8eef-2a69ba34978f")
 		)
@@ -11122,6 +11339,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
 			(at 123.19 53.34 0)
 			(effects
 				(font
@@ -11228,6 +11454,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 123.19 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c388dacb-4839-4e50-93cc-61c6e3d0c138")
 		)
@@ -11318,6 +11553,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 116.84 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 116.84 139.7 0)
 			(effects
 				(font
@@ -11424,6 +11668,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
+			(at 129.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "92b7b9e8-3aa5-4ef5-9091-bca8a4ce2e71")
 		)
@@ -11514,6 +11767,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 123.19 139.7 0)
 			(effects
 				(font
@@ -11620,6 +11882,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 129.54 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "36a62ddb-278b-4c4d-a827-59791e07ffeb")
 		)
@@ -11710,6 +11981,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
 			(at 97.79 82.55 0)
 			(effects
 				(font
@@ -11816,6 +12096,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 85.09 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "577c9899-5ba2-4aa9-bd4d-9100477aa780")
 		)
@@ -11906,6 +12195,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "732-5016-ND"
 			(at 110.49 68.58 0)
 			(effects
 				(font
@@ -12012,6 +12310,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 110.49 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0f6a8dcd-c46b-44cb-9afe-64261f6f8dc2")
 		)
@@ -12102,6 +12409,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
 			(at 110.49 53.34 0)
 			(effects
 				(font
@@ -12208,6 +12524,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 123.19 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8a77fa27-4674-49ff-b9c7-fedc31248ad1")
 		)
@@ -12298,6 +12623,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 135.89 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 135.89 139.7 0)
 			(effects
 				(font
@@ -12404,6 +12738,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
+			(at 91.44 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b198bf4d-8d59-4fe6-9a3d-087b8afb6a90")
 		)
@@ -12494,6 +12837,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
 			(at 110.49 96.52 0)
 			(effects
 				(font
@@ -12600,6 +12952,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 78.74 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "89b6c53e-bbda-4830-93ff-d28c0becd9f8")
 		)
@@ -12690,6 +13051,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 91.44 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 91.44 139.7 0)
 			(effects
 				(font
@@ -12796,6 +13166,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 116.84 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5945557a-758a-4c5d-a43e-251e528082f2")
 		)
@@ -12886,6 +13265,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 135.89 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 135.89 110.49 0)
 			(effects
 				(font
@@ -12992,6 +13380,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "56847571-41c5-42db-aa85-c44258df120c")
 		)
@@ -13082,6 +13479,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 85.09 139.7 0)
 			(effects
 				(font
@@ -13274,6 +13680,14 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 69.342 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3d406ba9-840e-4225-bd47-70b8158c9616")
 		)
@@ -13364,6 +13778,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 110.49 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
 			(at 110.49 82.55 0)
 			(effects
 				(font
@@ -13470,6 +13893,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 116.84 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "67160ade-1bd6-4085-abd9-82431c001550")
 		)
@@ -13560,6 +13992,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 85.09 110.49 0)
 			(effects
 				(font
@@ -13666,6 +14107,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 104.14 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "938c8186-3594-4c84-bb75-68b5e6f1ba00")
 		)
@@ -13756,6 +14206,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 78.74 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
 			(at 78.74 124.46 0)
 			(effects
 				(font
@@ -13862,6 +14321,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 123.19 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5a7eaf4c-4bd6-43dd-9cc4-3a79de1b9b31")
 		)
@@ -13952,6 +14420,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 91.44 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
 			(at 91.44 82.55 0)
 			(effects
 				(font
@@ -14058,6 +14535,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 135.89 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "398620b8-ae7f-433f-90ae-c0d18c5e8f1f")
 		)
@@ -14156,6 +14642,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 91.44 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2f381b9b-8b0a-45b0-b27d-ce542410d523")
 		)
@@ -14238,6 +14733,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 53.34 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "4713-GMC31X7R104K10NTCT-ND"
 			(at 53.34 26.67 0)
 			(effects
 				(font
@@ -14344,6 +14848,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 97.79 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "25a36833-05dd-43d0-88e3-1a31265a6e65")
 		)
@@ -14440,6 +14953,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "CatNo" "732-5016-ND"
+			(at 84.074 65.278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -14540,6 +15061,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 97.79 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "19e524c2-c692-48e5-8712-c4d080bccc43")
 		)
@@ -14630,6 +15160,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
 			(at 85.09 96.52 0)
 			(effects
 				(font
@@ -14821,6 +15360,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "1516-QBL7IW60D-NW-ND"
+			(at 116.84 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8c1ad528-7197-40bc-908d-462c26671b65")
 		)
@@ -14911,6 +15459,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 129.54 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
 			(at 129.54 96.52 0)
 			(effects
 				(font
@@ -15017,6 +15574,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NB--20C000313U1930CT-ND"
+			(at 97.79 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bf8a4a78-31de-4d5f-9cb9-3deb8c46f548")
 		)
@@ -15115,6 +15681,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
+			(at 104.14 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "24929985-bead-47ff-a98a-09bb21f3b708")
 		)
@@ -15205,6 +15780,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 135.89 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "3147-B1A81NG--20C000313U1930CT-ND"
 			(at 135.89 82.55 0)
 			(effects
 				(font

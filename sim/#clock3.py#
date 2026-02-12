@@ -8,8 +8,6 @@ HEIGHT = 500
 CENTER_X = WIDTH // 2
 CENTER_Y = HEIGHT // 2
 
-OUTER_RING_COUNT  = 12
-
 # Ring radii
 RADIUS_FAST    = 240   # fast outer ring
 RADIUS_SECONDS = 200
@@ -17,7 +15,7 @@ RADIUS_MINUTES = 160
 RADIUS_HOURS   = 120
 
 DOT_RADIUS = 6
-UPDATE_MS = 1000 // OUTER_RING_COUNT  # ~16.7 ms (60 Hz)
+UPDATE_MS = 1000 // 60  # ~16.7 ms (60 Hz)
 
 # Colors
 BG_COLOR = "black"
@@ -39,6 +37,8 @@ def polar_to_cartesian(angle_deg, radius):
     x = CENTER_X + radius * math.cos(angle_rad)
     y = CENTER_Y + radius * math.sin(angle_rad)
     return x, y
+
+
 
 def draw_ring(radius, active_index, active_color):
     for i in range(60):
