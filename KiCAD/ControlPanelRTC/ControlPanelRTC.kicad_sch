@@ -2424,15 +2424,35 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "I2C DISPLAY"
+	(text "UART link\nto main PCB"
 		(exclude_from_sim no)
-		(at 53.34 55.88 0)
+		(at 153.416 29.464 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.905 1.905)
+			)
+		)
+		(uuid "00c8b447-bbcc-4ea2-8d63-242d585d64ae")
+	)
+	(text "I2C DISPLAY"
+		(exclude_from_sim no)
+		(at 63.246 43.434 0)
+		(effects
+			(font
+				(size 1.905 1.905)
 			)
 		)
 		(uuid "41f5d99c-ac53-4f2a-95bb-17470b8cab16")
+	)
+	(text "Real-time Clock"
+		(exclude_from_sim no)
+		(at 61.722 105.918 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+		)
+		(uuid "b96297ff-0d97-4a5f-817a-d7dee3bea80f")
 	)
 	(junction
 		(at 88.9 88.9)
