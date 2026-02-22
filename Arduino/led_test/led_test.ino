@@ -1,6 +1,21 @@
 
 #include <Arduino.h>
 
+#define PCB_PINS
+
+#ifdef PCB_PINS
+const int LED_D0_PIN = A0;
+const int LED_D1_PIN = A1;
+const int LED_D2_PIN = A2;
+const int LED_D3_PIN = A3;
+const int LED_D4_PIN = A4;
+const int LED_D5_PIN = A5;
+const int LED_D6_PIN = A6;
+const int LED_D7_PIN = A7;
+
+const int LED_MODE = 8;
+const int LED_WRITE = 2;	// EWR0
+#else
 const int LED_D0_PIN = 2;
 const int LED_D1_PIN = 3;
 const int LED_D2_PIN = 4;
@@ -12,6 +27,7 @@ const int LED_D7_PIN = 9;
 
 const int LED_MODE = 23;
 const int LED_WRITE = 24;
+#endif
 
 void led_data( uint8_t d) {
   digitalWrite( LED_D0_PIN, d & _BV(0));
