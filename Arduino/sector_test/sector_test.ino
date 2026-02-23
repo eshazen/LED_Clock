@@ -1,0 +1,105 @@
+//
+// sweep through one sector
+//
+
+#include <Arduino.h>
+
+#include "led_map.h"
+
+uint8_t dring[LED_NPOS];	// ring data for positions 0..9
+uint8_t dled[8];	// 7218 data
+
+#define PCB_PINS
+
+#ifdef PCB_PINS
+const int LED_D0_PIN = A0;
+const int LED_D1_PIN = A1;
+const int LED_D2_PIN = A2;
+const int LED_D3_PIN = A3;
+const int LED_D4_PIN = A4;
+const int LED_D5_PIN = A5;
+const int LED_D6_PIN = A6;
+const int LED_D7_PIN = A7;
+
+const int LED_MODE = 8;
+const int LED_WRITE = 2;	// EWR0
+#else
+const int LED_D0_PIN = 2;
+const int LED_D1_PIN = 3;
+const int LED_D2_PIN = 4;
+const int LED_D3_PIN = 5;
+const int LED_D4_PIN = 6;
+const int LED_D5_PIN = 7;
+const int LED_D6_PIN = 8;
+const int LED_D7_PIN = 9;
+
+const int LED_MODE = 23;
+const int LED_WRITE = 24;
+#endif
+
+void led_data( uint8_t d) {
+  digitalWrite( LED_D0_PIN, d & _BV(0)); // d
+  digitalWrite( LED_D1_PIN, d & _BV(1)); // f
+  digitalWrite( LED_D2_PIN, d & _BV(2)); // g
+  digitalWrite( LED_D3_PIN, d & _BV(3)); // e
+  digitalWrite( LED_D4_PIN, d & _BV(4)); // c
+  digitalWrite( LED_D5_PIN, d & _BV(5)); // b
+  digitalWrite( LED_D6_PIN, d & _BV(6)); // a
+  digitalWrite( LED_D7_PIN, d & ~_BV(7)); // dp (inverted)
+}
+
+void led_write( uint8_t mode, uint8_t d) {
+  digitalWrite( LED_MODE, mode);
+  led_data( d);
+  digitalWrite( LED_WRITE, LOW);
+  digitalWrite( LED_WRITE, HIGH);
+}
+
+
+const uint8_t dpyblk = 0;	// blank the display
+const uint8_t dpymod = 0xb0;	// no decode, data coming, not blanked
+const uint8_t dpyhex = 0xd0;	// hex decode, data coming, not blanked
+
+void do7218( uint8_t IX[8]) {
+  led_write( 1, dpymod);
+  for( int i=0; i<8; i++)
+    led_write( 0, IX[i]);
+}
+
+
+void setup() {
+  pinMode( LED_D0_PIN, OUTPUT);
+  pinMode( LED_D1_PIN, OUTPUT);
+  pinMode( LED_D2_PIN, OUTPUT);
+  pinMode( LED_D3_PIN, OUTPUT);
+  pinMode( LED_D4_PIN, OUTPUT);
+  pinMode( LED_D5_PIN, OUTPUT);
+  pinMode( LED_D6_PIN, OUTPUT);
+  pinMode( LED_D7_PIN, OUTPUT);
+  pinMode( LED_MODE, OUTPUT);
+  pinMode( LED_WRITE, OUTPUT);
+  digitalWrite( LED_WRITE, HIGH);
+}
+
+static uint8_t led_blank[] = { 0, 0, 0, 0, 0, 0, 0, 0};
+static uint8_t led_light[] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };
+
+void loop() {
+
+  for( int i=0; i<5; i++) {
+    do7218( led_blank);
+    delay(100);
+    do7218( led_light);
+    delay(100);
+  }
+
+  for( int ring=0; ring<LED_NRING; ring++) {
+    for( int pos=0; pos<LED_NPOS; pos++) {
+      memset( dring, 0, sizeof(dring));
+      OVERWRITE_BIT( dring[ring], pos, 1);
+      update_sector( dring, dled);
+      do7218( dled);
+      delay(100);
+    }
+  }
+}
