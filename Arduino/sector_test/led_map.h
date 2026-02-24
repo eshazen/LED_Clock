@@ -41,7 +41,10 @@ void update_sector( uint8_t s[10], uint8_t d[8]) {
       //      printf( "  pos %d byt=%d seg=%c\n", pos, byt, segs[bit]);
       if( byt < 8 && bit < 8) {	// value 9 is null
 	int val = !!(s[pos] & (1<<ring));
-	OVERWRITE_BIT( d[byt], bit, val);
+	if( bit == 7)
+	  OVERWRITE_BIT( d[byt], bit, !val);
+	else
+	  OVERWRITE_BIT( d[byt], bit, val);
       }
     }
   }
