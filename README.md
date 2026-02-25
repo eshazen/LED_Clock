@@ -1,18 +1,23 @@
 # LED Clock
 
-Yet another LED pseudo-analog clock
-<br>Boards and parts ordered
+Yet another LED pseudo-analog clock.
+<br>6 concentric circles of 60 LEDs plus one of 12 LEDs.
+<br>Arduino Nano ESP32.
 
-Looking to add RTC plus setting option.
+Working code connects to WiFI and gets time from NTP.
+
+Ideas for stand-alone version:
+
+* Use ESP32Time library for local time-keeping and add a few
+buttons to set the time.  
+* Make an add-on board with RTC.  One version of this is in `SimpleRTC`.
+
+Notes:
 <br>Only the UART is brought out, and it's UART0, which is shared
 with the bootloader/kernel.  They an in principle be used as GPIO,
 but serial messages come out during boot so not ideal for e.g. I2C.
 
 There are two additional UARTs which can be mapped to any pin.
-
-Probably the best bet long-term is an auxiliary module powered
-by a 4-pin cable from the UART connector, with a keypad/LCD shield
-and RTC module.
 
 ## 2026-01-21
 
