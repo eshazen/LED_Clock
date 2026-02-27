@@ -1,13 +1,11 @@
 //
 // Local clock with setting options
+// use our own timer based clock since ESP32Time seems buggy
 //
 
 #include <Arduino.h>
-#include <ESP32Time.h>
 
 #include "led_map.h"
-
-ESP32Time rtc( -18000);		// EST offset
 
 // default time
 static int t_hr = 5;
@@ -17,6 +15,17 @@ static int t_sec = 33;;
 // pins for setting the time
 const int set_hr = 12;
 const int set_min = 11;
+
+#define TIMER_HZ 1000000L
+
+volatile uint32_t interruptCounter = 0;
+hw_timer_t* timer = NULL;
+
+// ISR function
+void IRAM_ATTR onTimer() {
+  interruptCounter++;
+}
+
 
 // display mapping for 1/6 sectors in dring[]
 //
@@ -108,7 +117,11 @@ void display_time( int hr, int min, int sec, uint8_t (&dat)[LED_NSEC][LED_NPOS])
     pd[i*5] |= 0x20;
 
   pd[sec] |= 0x40;		// set second bit in outer ring
-  pd[min] |= 0x18;		// set two bits in green rings
+
+  pd[min] |= 0x10;		// set two bits in green rings
+  pd[ (min-1)%60] |= 8;		// set adjacent bits
+  pd[ (min+1)%60] |= 8;
+
   if( hr > 12)
     hr -= 12;
   if( hr == 12)
@@ -118,7 +131,14 @@ void display_time( int hr, int min, int sec, uint8_t (&dat)[LED_NSEC][LED_NPOS])
   hr = hr + min/12;
   if( hr > 59)
     hr = 59;
-  pd[hr] |= 7;			// set 3 bits in blue rings
+
+  pd[hr] |= 5;			// set 3 bits in blue rings
+  // set adjacent bits
+  pd[ (hr-2)%60] |= 1;
+  pd[ (hr+2)%60] |= 1;
+  pd[ (hr-1)%60] |= 3;
+  pd[ (hr+1)%60] |= 3;
+
   update_display( dat);
 }
 
@@ -145,18 +165,34 @@ void setup() {
   for( int i=0; i<LED_NSEC; i++)
     do7218( i, led_blank);
 
-  rtc.setTime( t_sec, t_min, t_hr, 18, 2, 2026);
-
+  timer = timerBegin( 0, 80, true);	// 2kHz timer
+  timerAttachInterrupt( timer, &onTimer, true);
+  timerAlarmWrite( timer, TIMER_HZ, true);
+  timerAlarmEnable( timer);
 }
 
 void loop() {
 
+  display_time( t_hr, t_min, t_sec, dring);
+
+  while( !interruptCounter)
+    ;
+  interruptCounter = 0;
+
+  t_sec++;
+  if( t_sec == 60) {
+    t_sec = 0;
+    t_min++;
+    if( t_min == 60) {
+      t_min = 0;
+      t_hr++;
+      if( t_hr > 12)
+	t_hr = 1;
+    }
+  }
+
   int s_min = digitalRead( set_min);
   int s_hr = digitalRead( set_hr);
-
-  t_hr = rtc.getHour();
-  t_min = rtc.getMinute();
-  t_sec = rtc.getSecond();
 
   Serial.printf("Time now %d : %d : %d\n", t_hr, t_min, t_sec);
 
@@ -174,12 +210,9 @@ void loop() {
 
     Serial.printf("Set to %d : %d : %d\n", t_hr, t_min, t_sec);
 
-    rtc.setTime( t_sec, t_min, t_hr, 18, 2, 2026);
-
   }
 
-  display_time( rtc.getHour(), rtc.getMinute(), rtc.getSecond(), dring);
-  // display_time( t_hr, t_min, t_sec, dring);
+  display_time( t_hr, t_min, t_sec, dring);
 
 
   delay(1000);
