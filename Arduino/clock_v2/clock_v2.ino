@@ -118,7 +118,7 @@ void display_time( int hr, int min, int sec, uint8_t (&dat)[LED_NSEC][LED_NPOS])
 
   pd[sec] |= 0x40;		// set second bit in outer ring
 
-  pd[min] |= 0x10;		// set two bits in green rings
+  pd[min] |= 0x18;		// set two bits in green rings
   pd[ (min-1)%60] |= 8;		// set adjacent bits
   pd[ (min+1)%60] |= 8;
 
@@ -132,7 +132,7 @@ void display_time( int hr, int min, int sec, uint8_t (&dat)[LED_NSEC][LED_NPOS])
   if( hr > 59)
     hr = 59;
 
-  pd[hr] |= 5;			// set 3 bits in blue rings
+  pd[hr] |= 7;			// set 3 bits in blue rings
   // set adjacent bits
   pd[ (hr-2)%60] |= 1;
   pd[ (hr+2)%60] |= 1;
