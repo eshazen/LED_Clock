@@ -1,13 +1,15 @@
 //
 // Local clock with setting options
-// use our own timer based clock since ESP32Time seems buggy
+// Digital pins 11, 12 used for setting
 //
+
+// #define SERIAL_DEBUG
 
 #include <Arduino.h>
 
 #include "led_map.h"
 
-// default time
+// default time at power-up (somewhat random!)
 static int t_hr = 5;
 static int t_min = 12;
 static int t_sec = 33;;
@@ -169,16 +171,22 @@ void setup() {
   timerAttachInterrupt( timer, &onTimer, true);
   timerAlarmWrite( timer, TIMER_HZ, true);
   timerAlarmEnable( timer);
+
+#ifdef SERIAL_DEBUG
+  Serial.begin(115200);
+#endif  
 }
 
 void loop() {
 
   display_time( t_hr, t_min, t_sec, dring);
 
+  // wait for 1Hz alarm interrupt
   while( !interruptCounter)
     ;
   interruptCounter = 0;
 
+  // update the (12-hour) time
   t_sec++;
   if( t_sec == 60) {
     t_sec = 0;
@@ -191,16 +199,20 @@ void loop() {
     }
   }
 
+  // check for setting
   int s_min = digitalRead( set_min);
   int s_hr = digitalRead( set_hr);
 
+#ifdef SERIAL_DEBUG
   Serial.printf("Time now %d : %d : %d\n", t_hr, t_min, t_sec);
+#endif
 
   if( !s_min || !s_hr) {	// some set button pressed
 
     if( !s_min) {
       ++t_min;
       t_min = t_min % 60;
+      t_sec = 0;		// reset sec to 00 on minute set
     }
 
     if( !s_hr) {
@@ -208,7 +220,9 @@ void loop() {
       t_hr = t_hr % 12;
     }
 
+#ifdef SERIAL_DEBUG
     Serial.printf("Set to %d : %d : %d\n", t_hr, t_min, t_sec);
+#endif
 
   }
 
