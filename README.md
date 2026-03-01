@@ -4,36 +4,9 @@ Yet another LED pseudo-analog clock.
 <br>6 concentric circles of 60 LEDs plus one of 12 LEDs.
 <br>Arduino Nano ESP32.
 
-Working code connects to WiFI and gets time from NTP.
+Current code (`clock_v2`) just uses 1Hz timer interrupts
+and provides hour / minute set buttons.
 
-Ideas for stand-alone version:
-
-* Use ESP32Time library for local time-keeping and add a few
-buttons to set the time.  
-* Make an add-on board with RTC.  One version of this is in `SimpleRTC`.
-
-Notes:
-<br>Only the UART is brought out, and it's UART0, which is shared
-with the bootloader/kernel.  They an in principle be used as GPIO,
-but serial messages come out during boot so not ideal for e.g. I2C.
-
-There are two additional UARTs which can be mapped to any pin.
-
-## 2026-01-21
-
-`LED_Clock_sector` is the current design
-
-LEDs are arranged in 6 sectors of 62 total LEDs, each driven by an
-ICM7218A driver.  All placement/routing is duplicated radially.
-
-## 2026-02-18
-
-Thinking about a "mini" version (cheaper!).
-The cost driver (half the price!) is the LED driver ($15 each, controls
-64 LEDs).  An ATMega328 could do the same (possibly with transistors).
-In principle it could handle a 12x10 (2x60) array using 22 I/Os.
-This leaves exactly one for communication, and would require that the
-SPI programming be shared with some LED drivers.  Maybe a better choice
-would be e.g. AVR128DB32 ($2 each) with ~25 I/Os and UPDI.
-
-
+No ECOs on the PC board.  Forgot mounting holes though.
+See `Case` folder for a two-part 3D printed wall hangar
+with a little control panel for the set buttons.

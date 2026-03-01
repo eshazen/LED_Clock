@@ -9,9 +9,10 @@ plate_thk = 3;
 
 clip_height = 0.75*mm;
 slot_up = clip_height - 2;
-groove_wid = 1.6;
-groove_dep = 1.6;
-clip_wid = 0.2*mm;
+groove_wid = 2.0;
+groove_off = 1.6;
+groove_dep = 2.2;
+clip_wid = 0.25*mm;
 
 clip_thk = 5;
 spoke_wid = 10;
@@ -23,7 +24,7 @@ bp_len = 25;
 
 bp_dia = 0.625*mm;
 
-pcb_cor = clip_wid/2-groove_dep;
+pcb_cor = clip_wid/2-groove_off;
 
 module clip() {
   rotate( [0, 0, 180])
