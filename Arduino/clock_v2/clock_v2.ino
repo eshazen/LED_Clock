@@ -1,16 +1,18 @@
 //
 // Local clock with setting options
-// use our own timer based clock since ESP32Time seems buggy
+// Digital pins 11, 12 used for setting
 //
+
+// #define SERIAL_DEBUG
 
 #include <Arduino.h>
 
 #include "led_map.h"
 
-// default time
-static int t_hr = 5;
-static int t_min = 12;
-static int t_sec = 33;;
+// default time at power-up (somewhat random!)
+static int t_hr = 11;
+static int t_min = 55;
+static int t_sec = 50;
 
 // pins for setting the time
 const int set_hr = 12;
@@ -103,41 +105,47 @@ void update_display( uint8_t dat[LED_NSEC][LED_NPOS]) {
   }
 }
 
+#define wrap(n,m) (((n)+m)%m)
 
-// display the time
-void display_time( int hr, int min, int sec, uint8_t (&dat)[LED_NSEC][LED_NPOS]) {
+
+// display the time.  t_hr = 1..12  t_min = 0..59  t_sec = 0..59
+//
+void display_time( unsigned hr, unsigned min, unsigned sec, uint8_t (&dat)[LED_NSEC][LED_NPOS]) {
   uint8_t* pd = (uint8_t *)dat;
-  memset( dat, 0, sizeof(dat));
+  int d_hr;
+  // convert hour 1..12 to a display position 0..59
+  // 12
 
-  if( sec < 0 || sec > 59 || hr < 0 || hr > 12 || min < 0 || min > 59)
-    return;
+  if( hr == 12)
+    d_hr = min/12;
+  else
+    d_hr = hr*5 + (min/12);
+
+  memset( dat, 0, sizeof(dat));
 
   // turn on Reds
   for( int i=0; i<12; i++)
     pd[i*5] |= 0x20;
 
   pd[sec] |= 0x40;		// set second bit in outer ring
+  
+  pd[ wrap(min,60) ] |= 0x18;		// set two bits in green rings
+  pd[ wrap(min-1,60) ] |= 8;		// set adjacent bits
+  pd[ wrap(min+1,60) ] |= 8;
 
-  pd[min] |= 0x10;		// set two bits in green rings
-  pd[ (min-1)%60] |= 8;		// set adjacent bits
-  pd[ (min+1)%60] |= 8;
-
-  if( hr > 12)
-    hr -= 12;
-  if( hr == 12)
-    hr = 0;
+  // hour is in range 1..12
   // convert hour, min to 0..59
-  hr *= 5;
-  hr = hr + min/12;
-  if( hr > 59)
-    hr = 59;
 
-  pd[hr] |= 5;			// set 3 bits in blue rings
+#ifdef SERIAL_DEBUG
+	      Serial.printf("display(%d,%d,%d) hr = %d\n", hr, min, sec, d_hr);
+#endif  
+
+  pd[ wrap(d_hr,60)] |= 7;			// set 3 bits in blue rings
   // set adjacent bits
-  pd[ (hr-2)%60] |= 1;
-  pd[ (hr+2)%60] |= 1;
-  pd[ (hr-1)%60] |= 3;
-  pd[ (hr+1)%60] |= 3;
+  pd[ wrap(d_hr-2,60)] |= 1;
+  pd[ wrap(d_hr+2,60)] |= 1;
+  pd[ wrap(d_hr-1,60)] |= 3;
+  pd[ wrap(d_hr+1,60)] |= 3;
 
   update_display( dat);
 }
@@ -169,21 +177,28 @@ void setup() {
   timerAttachInterrupt( timer, &onTimer, true);
   timerAlarmWrite( timer, TIMER_HZ, true);
   timerAlarmEnable( timer);
+
+#ifdef SERIAL_DEBUG
+  Serial.begin(115200);
+#endif  
 }
 
 void loop() {
 
+  // display the time.  t_hr = 1..12  t_min = 0..59  t_sec = 0..59
   display_time( t_hr, t_min, t_sec, dring);
 
+  // wait for 1Hz alarm interrupt
   while( !interruptCounter)
     ;
   interruptCounter = 0;
 
+  // update the (12-hour) time
   t_sec++;
-  if( t_sec == 60) {
+  if( t_sec >= 60) {
     t_sec = 0;
     t_min++;
-    if( t_min == 60) {
+    if( t_min >= 60) {
       t_min = 0;
       t_hr++;
       if( t_hr > 12)
@@ -191,24 +206,31 @@ void loop() {
     }
   }
 
+  // check for setting
   int s_min = digitalRead( set_min);
   int s_hr = digitalRead( set_hr);
 
+#ifdef SERIAL_DEBUG
   Serial.printf("Time now %d : %d : %d\n", t_hr, t_min, t_sec);
+#endif
 
   if( !s_min || !s_hr) {	// some set button pressed
 
     if( !s_min) {
       ++t_min;
       t_min = t_min % 60;
+      t_sec = 0;		// reset sec to 00 on minute set
     }
 
     if( !s_hr) {
       ++t_hr;
-      t_hr = t_hr % 12;
+      if( t_hr > 12)
+	t_hr = 1;
     }
 
+#ifdef SERIAL_DEBUG
     Serial.printf("Set to %d : %d : %d\n", t_hr, t_min, t_sec);
+#endif
 
   }
 
