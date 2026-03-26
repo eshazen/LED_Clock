@@ -3106,7 +3106,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "256a9ac4-8018-4c20-a25f-45a173bfb9f8")
 		(property "Reference" "J2"
 			(at 217.17 86.3599 0)
@@ -3151,6 +3150,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "CatNo" "2057-PH1RB-04-UA-ND"
+			(at 229.87 92.202 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -3284,6 +3291,15 @@
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 218.948 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "CatNo" "450-1157-ND"
+			(at 214.63 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4014,6 +4030,15 @@
 				(hide yes)
 			)
 		)
+		(property "CatNo" "450-1157-ND"
+			(at 214.63 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0112a0bf-75c1-4753-822f-f6b72eed5dd6")
 		)
@@ -4101,7 +4126,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "70e70d57-a456-42d3-b2e0-e36043330521")
 		(property "Reference" "J3"
 			(at 217.17 120.6499 0)
@@ -4146,6 +4170,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "CatNo" "2057-PH1RB-04-UA-ND"
+			(at 229.87 126.238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -4386,8 +4418,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
+		(dnp no)
 		(uuid "9a40c778-b557-41c0-9d82-94d8bda839cc")
 		(property "Reference" "J1"
 			(at 101.6 151.1299 0)
@@ -4441,6 +4472,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "CatNo" "A122759-ND"
+			(at 93.726 156.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "5"
@@ -4557,7 +4596,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9ff8563e-af94-48c6-b394-57f269d1fa28")
 		(property "Reference" "U2"
 			(at 104.14 91.4399 0)
@@ -4603,6 +4641,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "CatNo" "ATTINY84A-PU-ND"
+			(at 95.758 96.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -4664,7 +4710,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a08284e2-f26d-430d-8faf-9085520cbc1b")
 		(property "Reference" "SW1"
 			(at 214.63 22.86 0)
@@ -4707,6 +4752,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "CatNo" "450-1157-ND"
+			(at 236.728 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
