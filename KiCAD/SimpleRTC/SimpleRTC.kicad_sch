@@ -3090,7 +3090,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "SimpleRTC"
 				(path "/25dcc5eb-ed4b-4c36-b18e-fa7aa8c8b8de"
 					(reference "H1")
 					(unit 1)
@@ -3173,7 +3173,7 @@
 			(uuid "d2b789c0-72aa-4660-9631-175607d41137")
 		)
 		(instances
-			(project ""
+			(project "SimpleRTC"
 				(path "/25dcc5eb-ed4b-4c36-b18e-fa7aa8c8b8de"
 					(reference "J2")
 					(unit 1)
@@ -3271,7 +3271,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AA_parts:SW4_1825910-B_TEC"
+		(property "Footprint" "AA_parts:SW_1437565-3"
 			(at 214.63 31.75 0)
 			(effects
 				(font
@@ -3445,7 +3445,7 @@
 			(uuid "b1e146f8-e6ea-4325-9bc3-a1da6252a982")
 		)
 		(instances
-			(project ""
+			(project "SimpleRTC"
 				(path "/25dcc5eb-ed4b-4c36-b18e-fa7aa8c8b8de"
 					(reference "#PWR03")
 					(unit 1)
@@ -4003,7 +4003,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AA_parts:SW4_1825910-B_TEC"
+		(property "Footprint" "AA_parts:SW_1437565-3"
 			(at 214.63 38.1 0)
 			(effects
 				(font
@@ -4193,7 +4193,7 @@
 			(uuid "cd541472-f286-466b-b7a3-086c9c92ec05")
 		)
 		(instances
-			(project ""
+			(project "SimpleRTC"
 				(path "/25dcc5eb-ed4b-4c36-b18e-fa7aa8c8b8de"
 					(reference "J3")
 					(unit 1)
@@ -4580,7 +4580,7 @@
 			(uuid "066948e9-a9fb-4817-ac0a-0f2199e3dbe1")
 		)
 		(instances
-			(project ""
+			(project "SimpleRTC"
 				(path "/25dcc5eb-ed4b-4c36-b18e-fa7aa8c8b8de"
 					(reference "D1")
 					(unit 1)
@@ -4694,7 +4694,7 @@
 			(uuid "aba817a8-5cbb-487d-b9c8-7544ba353e31")
 		)
 		(instances
-			(project ""
+			(project "SimpleRTC"
 				(path "/25dcc5eb-ed4b-4c36-b18e-fa7aa8c8b8de"
 					(reference "U2")
 					(unit 1)
@@ -4727,7 +4727,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AA_parts:SW4_1825910-B_TEC"
+		(property "Footprint" "AA_parts:SW_1437565-3"
 			(at 214.63 25.4 0)
 			(effects
 				(font
@@ -4769,7 +4769,7 @@
 			(uuid "638846af-74fa-4316-b404-d1ef021daa31")
 		)
 		(instances
-			(project ""
+			(project "SimpleRTC"
 				(path "/25dcc5eb-ed4b-4c36-b18e-fa7aa8c8b8de"
 					(reference "SW1")
 					(unit 1)
@@ -5112,7 +5112,7 @@
 			(uuid "27bb8b60-4068-4212-a4e4-e71b5c0aed9a")
 		)
 		(instances
-			(project ""
+			(project "SimpleRTC"
 				(path "/25dcc5eb-ed4b-4c36-b18e-fa7aa8c8b8de"
 					(reference "C1")
 					(unit 1)
