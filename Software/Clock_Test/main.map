@@ -10,6 +10,8 @@ Archive member included to satisfy reference by file (symbol)
                               main.o (__do_copy_data)
 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
                               main.o (__do_clear_bss)
+/usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/libc.a(strcpy.o)
+                              u8_str.o (strcpy)
 
 Allocating common symbols
 Common symbol       size              file
@@ -148,7 +150,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x3c0
+.text           0x0000000000000000      0x52a
  *(.vectors)
  .vectors       0x0000000000000000       0x22 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/crtattiny84.o
                 0x0000000000000000                __vectors
@@ -224,106 +226,112 @@ END GROUP
                 0x0000000000000058                __vector_14
                 0x0000000000000058                __vector_10
                 0x0000000000000058                __vector_16
- .text          0x000000000000005a        0x0 main.o
- .text          0x000000000000005a      0x20e ds3231.o
-                0x000000000000005a                i2c_delay
-                0x0000000000000062                i2c_start
-                0x000000000000007c                i2c_stop
-                0x0000000000000098                i2c_write
-                0x00000000000000da                i2c_read
-                0x000000000000011a                dec_to_bcd
-                0x0000000000000126                bcd_to_dec
-                0x0000000000000136                ds3231_write_reg
-                0x0000000000000152                ds3231_read_reg
-                0x0000000000000174                ds3231_set_time
-                0x00000000000001ce                ds3231_get_time
- .text          0x0000000000000268       0x4c uart_tx.o
-                0x0000000000000268                uart_init
-                0x000000000000026e                uart_tx_byte
-                0x000000000000029e                uart_tx_string
- .text          0x00000000000002b4       0x66 u8_str.o
-                0x00000000000002b4                u8_to_str
- .text          0x000000000000031a        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
- .text          0x000000000000031a        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
- .text          0x000000000000031a        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
- .text          0x000000000000031a        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
- .text          0x000000000000031a        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
-                0x000000000000031a                . = ALIGN (0x2)
+ .text          0x000000000000005a       0x84 main.o
+                0x000000000000005a                send_time
+ .text          0x00000000000000de      0x20e ds3231.o
+                0x00000000000000de                i2c_delay
+                0x00000000000000e6                i2c_start
+                0x0000000000000100                i2c_stop
+                0x000000000000011c                i2c_write
+                0x000000000000015e                i2c_read
+                0x000000000000019e                dec_to_bcd
+                0x00000000000001aa                bcd_to_dec
+                0x00000000000001ba                ds3231_write_reg
+                0x00000000000001d6                ds3231_read_reg
+                0x00000000000001f8                ds3231_set_time
+                0x0000000000000252                ds3231_get_time
+ .text          0x00000000000002ec       0x4c uart_tx.o
+                0x00000000000002ec                uart_init
+                0x00000000000002f2                uart_tx_byte
+                0x0000000000000322                uart_tx_string
+ .text          0x0000000000000338       0x82 u8_str.o
+                0x0000000000000338                u8_to_str2
+                0x0000000000000354                u8_to_str
+ .text          0x00000000000003ba        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
+ .text          0x00000000000003ba        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
+ .text          0x00000000000003ba        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+ .text          0x00000000000003ba        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
+ .text          0x00000000000003ba        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+ .text          0x00000000000003ba        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/libc.a(strcpy.o)
+                0x00000000000003ba                . = ALIGN (0x2)
  *(.text.*)
- .text.startup  0x000000000000031a       0x78 main.o
-                0x000000000000031a                main
+ .text.startup  0x00000000000003ba      0x134 main.o
+                0x00000000000003ba                main
  .text.libgcc.mul
-                0x0000000000000392       0x12 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
-                0x0000000000000392                __mulqi3
+                0x00000000000004ee       0x12 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
+                0x00000000000004ee                __mulqi3
  .text.libgcc.div
-                0x00000000000003a4        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
- .text.libgcc   0x00000000000003a4        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
+                0x0000000000000500        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
+ .text.libgcc   0x0000000000000500        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
  .text.libgcc.prologue
-                0x00000000000003a4        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
+                0x0000000000000500        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
  .text.libgcc.builtins
-                0x00000000000003a4        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
+                0x0000000000000500        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
  .text.libgcc.fmul
-                0x00000000000003a4        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
+                0x0000000000000500        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
  .text.libgcc.fixed
-                0x00000000000003a4        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
+                0x0000000000000500        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_mulqi3.o)
  .text.libgcc.mul
-                0x00000000000003a4        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
+                0x0000000000000500        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
  .text.libgcc.div
-                0x00000000000003a4       0x18 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
-                0x00000000000003a4                __udivmodqi4
- .text.libgcc   0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
+                0x0000000000000500       0x18 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
+                0x0000000000000500                __udivmodqi4
+ .text.libgcc   0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
  .text.libgcc.prologue
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
  .text.libgcc.builtins
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
  .text.libgcc.fmul
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
  .text.libgcc.fixed
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_udivmodqi4.o)
  .text.libgcc.mul
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
  .text.libgcc.div
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
- .text.libgcc   0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
- .text.libgcc   0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
  .text.libgcc.fixed
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
- .text.libgcc   0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
-                0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
-                0x00000000000003bc                . = ALIGN (0x2)
+                0x0000000000000518        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x0000000000000518        0xe /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/libc.a(strcpy.o)
+                0x0000000000000518                strcpy
+                0x0000000000000526                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000000000003bc        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
-                0x00000000000003bc                exit
-                0x00000000000003bc                _exit
+ .fini9         0x0000000000000526        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+                0x0000000000000526                exit
+                0x0000000000000526                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -342,11 +350,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000000000003bc        0x4 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
+ .fini0         0x0000000000000526        0x4 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
  *(.fini0)
-                0x00000000000003c0                _etext = .
+                0x000000000000052a                _etext = .
 
-.data           0x0000000000800060        0x6 load address 0x00000000000003c0
+.data           0x0000000000800060        0x6 load address 0x000000000000052a
                 0x0000000000800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/crtattiny84.o
@@ -359,15 +367,17 @@ END GROUP
  .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
  .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
  .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800060        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/libc.a(strcpy.o)
  *(.data*)
  *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x0000000000800060        0x5 main.o
+                0x0000000000800060        0x3 main.o
+ .rodata.str1.1
+                0x0000000000800063        0x3 u8_str.o
  *(.gnu.linkonce.r*)
                 0x0000000000800066                . = ALIGN (0x2)
- *fill*         0x0000000000800065        0x1 
                 0x0000000000800066                _edata = .
                 0x0000000000800066                PROVIDE (__data_end, .)
 
@@ -384,6 +394,7 @@ END GROUP
  .bss           0x0000000000800066        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
  .bss           0x0000000000800066        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
  .bss           0x0000000000800066        0x0 /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800066        0x0 /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/libc.a(strcpy.o)
  *(.bss*)
  *(COMMON)
  COMMON         0x0000000000800066       0x11 main.o
@@ -396,8 +407,8 @@ END GROUP
                 0x0000000000800075                day
                 0x0000000000800076                date
                 0x0000000000800077                PROVIDE (__bss_end, .)
-                0x00000000000003c0                __data_load_start = LOADADDR (.data)
-                0x00000000000003c6                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000000000000052a                __data_load_start = LOADADDR (.data)
+                0x0000000000000530                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0000000000800077        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)
@@ -425,19 +436,19 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab           0x0000000000000000     0x19d4
+.stab           0x0000000000000000     0x1c38
  *(.stab)
- .stab          0x0000000000000000      0x5ac main.o
- .stab          0x00000000000005ac      0xc24 ds3231.o
+ .stab          0x0000000000000000      0x744 main.o
+ .stab          0x0000000000000744      0xc24 ds3231.o
                                         0xdec (size before relaxing)
- .stab          0x00000000000011d0      0x498 uart_tx.o
+ .stab          0x0000000000001368      0x498 uart_tx.o
                                         0x660 (size before relaxing)
- .stab          0x0000000000001668      0x36c u8_str.o
-                                        0x4e0 (size before relaxing)
+ .stab          0x0000000000001800      0x438 u8_str.o
+                                        0x5ac (size before relaxing)
 
-.stabstr        0x0000000000000000      0xfc6
+.stabstr        0x0000000000000000     0x1054
  *(.stabstr)
- .stabstr       0x0000000000000000      0xfc6 main.o
+ .stabstr       0x0000000000000000     0x1054 main.o
 
 .stab.excl
  *(.stab.excl)
@@ -550,6 +561,7 @@ __data_start                                      /usr/lib/gcc/avr/7.3.0/avr25/l
 __do_clear_bss                                    /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_clear_bss.o)
                                                   main.o
 __do_copy_data                                    /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_copy_data.o)
+                                                  u8_str.o
                                                   main.o
 __heap_end                                        /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/crtattiny84.o
 __init                                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/crtattiny84.o
@@ -587,6 +599,7 @@ ds3231_get_time                                   ds3231.o
                                                   main.o
 ds3231_read_reg                                   ds3231.o
 ds3231_set_time                                   ds3231.o
+                                                  main.o
 ds3231_write_reg                                  ds3231.o
 exit                                              /usr/lib/gcc/avr/7.3.0/avr25/libgcc.a(_exit.o)
                                                   /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/crtattiny84.o
@@ -601,11 +614,16 @@ main                                              main.o
 min                                               main.o
 month                                             main.o
 sec                                               main.o
+send_time                                         main.o
+strcpy                                            /usr/lib/gcc/avr/7.3.0/../../../avr/lib/avr25/libc.a(strcpy.o)
+                                                  u8_str.o
 u8_to_str                                         u8_str.o
+u8_to_str2                                        u8_str.o
                                                   main.o
 uart_init                                         uart_tx.o
                                                   main.o
 uart_tx_byte                                      uart_tx.o
+                                                  main.o
 uart_tx_string                                    uart_tx.o
                                                   main.o
 year                                              main.o

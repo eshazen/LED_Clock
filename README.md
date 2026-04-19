@@ -14,3 +14,15 @@ with a little control panel for the set buttons.
 Works OK but loses ~1min/day.  Need to work on the timekeeping.
 
 <img src="images/front.jpg" width="400" alt="Front View">
+
+### 2026-04-12
+
+Working on SimpleRTC add-on to keep better time.
+<br>Need a serial port on the ESP32.
+<br>It's confusing:
+https://forum.arduino.cc/t/nano-esp32-onboard-uart-and-pin-numbering-issues/1269099/9
+
+I _think_ this should work:
+
+    Serial1.begin(1200, SERIAL_8N1, D11, D12);
+	

@@ -1,4 +1,15 @@
 #include <stdint.h>
+#include <string.h>
+
+// convert 0-99 to string with leading zeroes
+void u8_to_str2(uint8_t value, char *buffer) {
+  if( value > 99)
+    strcpy( buffer, "99");
+  else {
+    buffer[0] = value / 10 + '0';
+    buffer[1] = value % 10 + '0';
+  }
+}
 
 // Converts 0–255 into ASCII string
 // buffer must be at least 4 bytes: "255\0"
