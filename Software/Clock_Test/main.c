@@ -29,39 +29,57 @@ void send_time() {
     uart_tx_string("\r\n");
 }
 
+// button scan delay
+#define SCAN_MS 200
+
+// number of scan periods between clock updates (1 min per update)
+// #define UPDATE_TICKS (60000L/SCAN_MS)
+#define UPDATE_TICKS 50
+
 int main() {
+
+  uint8_t b_set, tick, send_delay;
 
   uart_init();
   PORTA |= 7;			/* pull-ups on PA0..PA2 (buttons) */
 
+  tick = 0;
+  send_delay = 0;
+
   while(1) {
-    send_time();
+    // check for set buttons
+    b_set = (PINA & 7) ^ 7;
 
-    if( !(PINA & 1)) {		/* hour set */
+    if( b_set) {		/* any set buttons pressed? */
       ds3231_get_time(&sec, &min, &hour, &day, &date, &month, &year);
-      hour++;
-      if( hour > 23)
-	hour -= 24;
+
+      if( b_set & 1) {		/* hour set */
+	hour++;
+	if( hour > 23)
+	  hour -= 24;
+      }
+
+      if( b_set & 2) {		/* min set */
+	min++;
+	if( min > 59)
+	  min = 0;
+      }
+
+      if( b_set & 4) {		/* sec set */
+	sec++;
+	if( sec > 59)
+	  sec = 0;
+      }
       ds3231_set_time(sec, min, hour, day, date, month, year);
+      send_time();
     }
 
-    if( !(PINA & 2)) {		/* min set */
-      ds3231_get_time(&sec, &min, &hour, &day, &date, &month, &year);
-      min++;
-      if( min > 59)
-	min = 0;
-      ds3231_set_time(sec, min, hour, day, date, month, year);
-    }
+    _delay_ms(SCAN_MS);		/* check buttons at 5Hz */
 
-    if( !(PINA & 4)) {		/* sec set */
-      ds3231_get_time(&sec, &min, &hour, &day, &date, &month, &year);
-      sec++;
-      if( sec > 59)
-	sec = 0;
-      ds3231_set_time(sec, min, hour, day, date, month, year);
+    ++tick;
+    if( tick >= UPDATE_TICKS) {
+      tick = 0;
+      send_time();
     }
-    
-
-    _delay_ms(250);
   }
 }
