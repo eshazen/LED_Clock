@@ -5,7 +5,7 @@
 // Expect 1200 baud time messages of the format [hh:mm:ss] to set
 //
 
-#define SERIAL_DEBUG
+// #define SERIAL_DEBUG
 
 #include <Arduino.h>
 #include <string.h>
@@ -142,10 +142,6 @@ void display_time( unsigned hr, unsigned min, unsigned sec, uint8_t (&dat)[LED_N
   // hour is in range 1..12
   // convert hour, min to 0..59
 
-#ifdef SERIAL_DEBUG
-	      Serial.printf("display(%d,%d,%d) hr = %d\n", hr, min, sec, d_hr);
-#endif  
-
   pd[ wrap(d_hr,60)] |= 7;			// set 3 bits in blue rings
   // set adjacent bits
   pd[ wrap(d_hr-2,60)] |= 1;
@@ -186,6 +182,10 @@ void setup() {
 
 #ifdef SERIAL_DEBUG
   Serial.begin(115200);
+  while( !Serial)
+    ;
+  delay(1000);
+  Serial.println("clock test v3");
 #endif  
 
   Serial1.begin(1200, SERIAL_8N1, D12, D11); // Rx on D12 (physical pin 15, LL corner)
@@ -202,14 +202,22 @@ void loop() {
       interruptCounter = 0;
       break;
     }
-      
+
+    delay(10);
+
     // look for [hh:mm:ss]
-    if( Serial1.available()) {
+    while( Serial1.available()) {
+
+      char c = Serial1.read();
+
+#ifdef SERIAL_DEBUG
+      Serial.printf("Got %c\n", c);
+#endif      
 
       memmove( buff, buff+1, BSIZ-2);
-      buff[BSIZ-2] = Serial1.read();
+      buff[9] = c;
       if( buff[0] == '[' && buff[9] == ']') {
-	buff[8] = '\0';
+	buff[10] = '\0';
 	t_hr = atoi( buff+1);
 	t_min = atoi( buff+4);
 	t_sec = atoi( buff+7);
@@ -240,7 +248,4 @@ void loop() {
   }
 
   display_time( t_hr, t_min, t_sec, dring);
-
-
-  delay(1000);
 }
