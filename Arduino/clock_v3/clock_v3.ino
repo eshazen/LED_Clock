@@ -197,9 +197,34 @@ void loop() {
   display_time( t_hr, t_min, t_sec, dring);
 
   // wait for 1Hz alarm interrupt
-  while( !interruptCounter)
-    ;
-  interruptCounter = 0;
+  while( 1) {
+    if( interruptCounter) {
+      interruptCounter = 0;
+      break;
+    }
+      
+    // look for [hh:mm:ss]
+    if( Serial1.available()) {
+
+      memmove( buff, buff+1, BSIZ-2);
+      buff[BSIZ-2] = Serial1.read();
+      if( buff[0] == '[' && buff[9] == ']') {
+	buff[8] = '\0';
+	t_hr = atoi( buff+1);
+	t_min = atoi( buff+4);
+	t_sec = atoi( buff+7);
+	if( t_sec > 60)
+	  t_sec = 0;
+	if( t_min >= 60)
+	  t_min = 0;
+	while( t_hr > 12)
+	  t_hr -= 12;
+#ifdef SERIAL_DEBUG
+	Serial.printf("Set from \"%s\" to (%d,%d,%d)\n", buff, t_hr, t_min, t_sec);
+#endif      
+      }
+    }
+  }
 
   // update the (12-hour) time
   t_sec++;
@@ -212,29 +237,6 @@ void loop() {
       if( t_hr > 12)
 	t_hr = 1;
     }
-  }
-
-  // look for [hh:mm:ss]
-  if( Serial1.available()) {
-
-    memmove( buff, buff+1, BSIZ-2);
-    buff[BSIZ-2] = Serial1.read();
-    if( buff[0] == '[' && buff[9] == ']') {
-      buff[8] = '\0';
-      t_hr = atoi( buff+1);
-      t_min = atoi( buff+4);
-      t_sec = atoi( buff+7);
-      if( t_sec > 60)
-	t_sec = 0;
-      if( t_min >= 60)
-	t_min = 0;
-      while( t_hr > 12)
-	t_hr -= 12;
-#ifdef SERIAL_DEBUG
-      Serial.printf("Set from \"%s\" to (%d,%d,%d)\n", buff, t_hr, t_min, t_sec);
-#endif      
-    }
-
   }
 
   display_time( t_hr, t_min, t_sec, dring);
