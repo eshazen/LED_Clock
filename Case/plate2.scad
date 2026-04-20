@@ -1,9 +1,14 @@
+//
+// mounting plate for 9 inch round PCB plus
+// SimpleRTC PCB 55 x 25mm
+//
 
 mm = 25.4;
 e = 0.1;
 $fn = 128;
 
-pcb_dia = 9*mm;
+// pcb_dia = 9*mm;
+pcb_dia = (9-.025)*mm;		/* tighten up a bit to hold PCB */
 plate_dia = 5*mm;
 plate_thk = 3;
 
