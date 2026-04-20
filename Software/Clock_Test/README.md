@@ -6,5 +6,7 @@ Look for button presses to update H, M, S at 5Hz.  When update seen,
 reset the DS3231 and send a time string '[hh:mm:ss]' to serial port
 at 1200 baud.
 
+The S button resets the seconds to 0
+
 Send a time update every 10s regardless of setting.
 

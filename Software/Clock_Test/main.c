@@ -1,6 +1,13 @@
 /*
- * Blinky for ATTiny84 with LEDs on PB0, PB1
+ * Simple serial RTC firmware
  *
+ * Read time from DS3231 module via I2C and send as [hh:mm:ss]
+ * via software uart at 1200 baud on PB0.
+ *
+ * Set buttons are on PA0..PA2
+ * PA0 - set hours
+ * PA1 - set minutes
+ * PA2 - reset seconds to 00
  */
 
 #include <avr/io.h>
@@ -66,9 +73,7 @@ int main() {
       }
 
       if( b_set & 4) {		/* sec set */
-	sec++;
-	if( sec > 59)
-	  sec = 0;
+	sec = 0;
       }
       ds3231_set_time(sec, min, hour, day, date, month, year);
       send_time();

@@ -4,7 +4,11 @@ Yet another LED pseudo-analog clock.
 <br>6 concentric circles of 60 LEDs plus one of 12 LEDs.
 <br>Arduino Nano ESP32.
 
-Current code (`clock_v2`) just uses 1Hz timer interrupts
+Current code (`clock_v3`) runs on 1Hz interrupts but expects
+periodic time updates of the format `[hh:mm:ss]` at 1200 baud
+from an external RTC.
+
+First release code (`clock_v2`) just uses 1Hz timer interrupts
 and provides hour / minute set buttons.
 
 No ECOs on the PC board.  Forgot mounting holes though.
@@ -14,6 +18,10 @@ with a little control panel for the set buttons.
 Works OK but loses ~1min/day.  Need to work on the timekeeping.
 
 <img src="images/front.jpg" width="400" alt="Front View">
+
+### 2026-04-19
+
+Implemented initial RTC board software.
 
 ### 2026-04-12
 

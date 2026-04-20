@@ -98,8 +98,7 @@ module bpanel2() {
 	       translate( [sr_wid, 0, 0])
 		    color("pink") cube( [rtc_sup, sr_len, bp_up+sr_thk]);
 	  }
-	  translate( [-sr_wid/2, -sr_down-sr_len, 0])
-	       cube( [sr_wid, rtc_sup, bp_up]);
+	  translate( [-sr_wid/2, -sr_down-rtc_sup, 0]) cube( [sr_wid, rtc_sup, bp_up]);
      }
 }
 
