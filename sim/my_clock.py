@@ -146,7 +146,8 @@ def update():
         hour = (hour % 12) * 5 + minute // 12
 
     # Draw rings
-    draw_ring(RADIUS_FAST, second, INACTIVE_COLOR, SEC_COLOR)
+#    draw_ring(RADIUS_FAST, second, INACTIVE_COLOR, SEC_COLOR)
+    draw_ring(RADIUS_FAST, second, SEC_COLOR, INACTIVE_COLOR)
 
     draw_12ring( RADIUS_12, 0, "#FF0000")
 
