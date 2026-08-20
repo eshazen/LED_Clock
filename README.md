@@ -17,7 +17,7 @@ with a little control panel for the set buttons.
 
 Works OK but loses ~1min/day.  Need to work on the timekeeping.
 
-<img src="images/front.jpg" width="400" alt="Front View">
+<img src="images/office.jpg" width="400" alt="Front View">
 
 ### 2026-04-19
 
